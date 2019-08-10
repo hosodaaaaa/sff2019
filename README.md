@@ -4,8 +4,8 @@ develop for sff2019
 
 ## git commit message
 
-:tada: first commit
-:bug: Bug support
-:sparkles: New feature
-:books: read me
-:lipstick: cosmetic
+:tada: first commit<br>
+:bug: Bug support<br>
+:sparkles: New feature<br>
+:books: read me<br>
+:lipstick: cosmetic<br>
