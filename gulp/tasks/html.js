@@ -5,11 +5,12 @@ const progeny = require("gulp-progeny");
 const config = require("../config");
 
 // pug task
-gulp.task("pug", () => {
+gulp.task("pug", done => {
   gulp
     .src(`${config.src.pug}/**/[^_]*.pug`)
     .pipe(plumber())
     .pipe(progeny())
     .pipe(pug())
     .pipe(gulp.dest(config.dest.html));
+  done();
 });
