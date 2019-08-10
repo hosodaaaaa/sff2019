@@ -18,11 +18,18 @@
   },
   "homepage": "https://github.com/hosodaaaaa/sff2019#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
+    "gulp-imagemin": "^6.0.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
     "gulp-progeny": "^0.4.1",
     "gulp-pug": "^4.0.1",
+    "require-dir": "^1.2.0"
+  },
+  "dependencies": {
     "gulp-sass": "^4.0.2"
   }
 }
