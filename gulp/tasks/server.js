@@ -8,7 +8,7 @@ gulp.task("server", () => {
 });
 
 gulp.task("reload", () => {
-  gulp.watch(`${config.src.dest}/*`, () => {
+  gulp.watch(`${config.src.dist}/*`, () => {
     browserSync.reload();
   });
 });
