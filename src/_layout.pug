@@ -1,0 +1,29 @@
+doctype html
+block init
+- const title = meta.title || "Student Freepaper Forum"
+- const desc = meta.desc || "text"
+- const path = meta.path || "./"
+- const url = "https://sff-web.com"
+head
+  meta(charset="UTF-8")
+  title = title
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  meta(name="description", content="desc")
+  meta(property="og:title" content=title)
+  meta(property="og:type" content="website")
+  meta(property="og:url" content=url)
+  meta(property="og:image" content=`${url}`)
+  meta(property="og:site_name" content=title)
+  meta(property="og:description" content=desc)
+  meta(property="twitter:title" content=title)
+  meta(property="twitter:description" content=desc)
+
+  link(rel="stylesheet", href=`${path}css/sanitize.sass`)
+  link(rel="stylesheet", href=`${path}css/main.sass`)
+body
+  wrapper
+    include _partials/_header.pug
+    include _partials/_hamburger.pug
+      main#main
+    include _partials/_footer.pug
