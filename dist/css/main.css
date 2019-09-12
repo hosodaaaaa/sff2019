@@ -1,0 +1,17 @@
+div, ul, li, h1, h2, h3, h4, span {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
