@@ -1,0 +1,98 @@
+@import "../_mixin"
+@import "../_modules/_common"
+@import "../_variables"
+
+.gFooter
+  display: flex
+  justify-content: center
+  padding: 80px 100px 15px
+  .contentBox
+    margin-right: 90px
+    .footerTitle
+      font-size: 16px
+      font-weight: 500
+      letter-spacing: 1.3px
+      margin-bottom: 25px
+    .gContent
+      display: grid
+      grid-template-columns: repeat(3,1fr)
+      grid-template-rows: minmax(auto, 80px) repeat(1, 1fr)
+      .gContentInner
+        .contentTitle
+          margin-bottom: 18px
+          font-size: 14px
+        .contentDetail
+          display: flex
+          flex-direction: column
+          a
+            align-items: center
+            color: #000
+            display: flex
+            margin-bottom: 15px
+            .childArrow
+              display: inline-block
+              font-size: 12px
+              margin-right: 7px
+              transform: translateX(0px)
+              transition: .2s
+            @include pc
+              &:hover
+                .childArrow
+                  transform: translateX(3px)
+            .childTxt
+              font-size: 12px
+        &:nth-of-type(4)
+          grid-column-start: 3
+          grid-column-end: 4
+        &:nth-of-type(5)
+          grid-column-start: 4
+          grid-column-end: 5
+          grid-row-start: 1
+          grid-row-end: 2
+  .otherBox
+    .footerTitle
+      font-size: 16px
+      font-weight: 500
+      letter-spacing: 1.3px
+      margin-bottom: 25px
+    .gOtherList
+      display: flex
+      margin-bottom: 15px
+      .gOtherInner
+        margin-right: 40px
+        a
+          color: #000
+          display: block
+          &.faceBook
+            &::before
+              content: ""
+              font-family: "Font Awesome 5 Free"
+              font-size: 16px
+              font-weight: 400
+              height: 50px
+              width: 50px
+          &.twitter
+            &::before
+              content: ""
+              font-family: "Font Awesome 5 Free"
+              font-size: 16px
+              font-weight: 400
+              height: 50px
+              width: 50px
+          &.instaGram
+            &::before
+              content: ""
+              font-family: "Font Awesome 5 Free"
+              font-size: 16px
+              font-weight: 400
+              width: 50px
+              height: 50px
+    .gOtherContact
+      border: 1px solid #000
+      text-align: center
+      a
+        color: #000
+        font-size: 16px
+        padding: 20px 0
+        display: inline-block
+        width: 100%
