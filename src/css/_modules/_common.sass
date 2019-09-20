@@ -1,7 +1,9 @@
+@import "../_mixin"
 @import "../_variables"
 
+
 // 全体共通
-div,ul,li,h1,h2,h3,h4,span
+html,body,div,ul,li,h1,h2,h3,h4,p,span
   margin: 0px
   padding: 0px
 
@@ -9,8 +11,19 @@ img
   max-width: 100%
   height: auto
 
+li
+  list-style: none
+
+a
+  text-decoration: none
+
 .pc
   display: block
+  @include sp
+    display: none
 
 .sp
   display: none
+  @include pc
+    display: block
+

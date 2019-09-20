@@ -1,7 +1,9 @@
-// min-width
-$xs: 641px
-$sm: 841px
+@mixin sp
+  @media (max-width: 767px)
+    @content;
 
-// max-width
-$xs: 640px
-$sm: 840px
+
+@mixin pc
+  @media (min-width: 768px)
+    @content;
+
