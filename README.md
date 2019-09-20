@@ -8,4 +8,6 @@ develop for sff2019
 :bug: Bug support<br>
 :sparkles: New feature<br>
 :books: read me<br>
-:lipstick: cosmetic
+:lipstick: cosmetic<br>
+:construction: WIP<br>
+:zap: General update
