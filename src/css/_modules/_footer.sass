@@ -1,5 +1,4 @@
 @import "../_mixin"
-@import "../_modules/_common"
 @import "../_variables"
 
 .gFooter
@@ -58,41 +57,86 @@
     .gOtherList
       display: flex
       margin-bottom: 15px
-      .gOtherInner
-        margin-right: 40px
-        a
-          color: #000
-          display: block
-          &.faceBook
-            &::before
-              content: ""
-              font-family: "Font Awesome 5 Free"
-              font-size: 16px
-              font-weight: 400
-              height: 50px
-              width: 50px
-          &.twitter
-            &::before
-              content: ""
-              font-family: "Font Awesome 5 Free"
-              font-size: 16px
-              font-weight: 400
-              height: 50px
-              width: 50px
-          &.instaGram
-            &::before
-              content: ""
-              font-family: "Font Awesome 5 Free"
-              font-size: 16px
-              font-weight: 400
-              width: 50px
-              height: 50px
+      justify-content: space-between
+      width: 250px
+      a
+        display: block
+        &.faceBook
+          &::before
+            background-image: $facebook
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 100%
+            content: ""
+            display: block
+            height: 35px
+            width: 35px
+        &.twitter
+          &::before
+            background-image: $twitter
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 100%
+            content: ""
+            display: block
+            height: 35px
+            width: 35px
+        &.instaGram
+          &::before
+            background-image: $insta
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 100%
+            content: ""
+            display: block
+            width: 35px
+            height: 35px
+        &.partner
+          &::before
+            background-image: $partner
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 35px
+            content: ""
+            display: block
+            width: 35px
+            height: 35px
     .gOtherContact
       border: 1px solid #000
       text-align: center
+      overflow: hidden
+      @include pc
+        &:hover
+          a
+            color: #fff
+            &::before
+              content: ""
+              position: absolute
+              top: 50%
+              left: 50%
+              border-radius: 50px
+              background-color: #000
+              width: 100%
+              height: 100%
+              opacity: 1
+              transform: translate(-50%,-50%) scale(1.2)
+              z-index: -1
       a
         color: #000
+        display: inline-block
         font-size: 16px
         padding: 20px 0
-        display: inline-block
+        position: relative
         width: 100%
+        &::before
+          content: ""
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%,-50%) scale(0)
+          width: 0%
+          height: 0%
+          border-radius: 50px
+          background-color: #fff
+          opacity: 0
+          transition: .2s
