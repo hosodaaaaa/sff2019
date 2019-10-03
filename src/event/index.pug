@@ -1,0 +1,54 @@
+extends ../_layout
+block init
+  -
+    const meta = {
+      title: "Student Freepaper Forum",
+      path: '../'
+    }
+    const page = {
+      id: "event"
+    }
+block contents
+  section.mainBox
+    img(src="", alt="メインビジュアル")
+  section.eventBox
+    .title EVENT
+    p.subTitle ━ 学生出展媒体一覧
+    .eventImgBox
+      .eventImgInner
+        .imgBox
+          img(src="", alt="")
+        .imgTitle ああああ
+      .eventImgInner
+        .imgBox
+          img(src="", alt="")
+        .imgTitle ああああ
+      .eventImgInner
+        .imgBox
+          img(src="", alt="")
+        .imgTitle ああああ
+      .eventImgInner
+        .imgBox
+          img(src="", alt="")
+        .imgTitle ああああ
+      .eventImgInner
+        .imgBox
+          img(src="", alt="")
+        .imgTitle ああああ
+  section.eventBox
+    .title TIMETABLE
+    p.subTitle ━  当日の流れ
+    p.limited comming soon
+  section.eventBox
+    .title WORKSHOP
+    p.subTitle ━  体験しよう！
+    p.limited comming soon
+  section.eventBox
+    .title ACCESS
+    p.subTitle ━ 会場詳細
+    dl.eventInfo
+      dt.eventInfoTitle 開催日時 :&nbsp;
+      dd.eventInfoDiscription 2019年12月8日(日) 入場無料
+      dt.eventInfoTitle 開催場所 :&nbsp;
+      dd.eventInfoDiscription テラススクエア 東京都千代田区神田錦町3丁目22番地
+    #map
