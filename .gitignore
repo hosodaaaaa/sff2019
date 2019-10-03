@@ -62,3 +62,9 @@ typings/
 
 # distファイルの除外
 dist/
+package-lock.json
+*.css
+*.html
+*.json
+*.css
+package-lock.json
