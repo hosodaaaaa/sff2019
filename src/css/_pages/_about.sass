@@ -1,6 +1,15 @@
 @import "../_mixin"
 @import "../_variables"
 
+.mainChildBox
+  .mainTitle
+    width: 500px
+    height: 300px
+    background-image: $about
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
 .aboutBox
   margin: 0 auto 150px
   max-width: 1024px
@@ -11,18 +20,20 @@
   .title
     font-size: 34px
     font-weight: bold
-    color: #000
+    color: #fff
   .subTitle
     font-size: 22px
     font-weight: normal
-    color: #000
+    color: #fff
     margin: 13px 0 20px
   .sentence
     font-size: 16px
     font-weight: normal
-    color: #000
+    color: #fff
     line-height: 2
     letter-spacing: 1.5px
+    @include sp
+      font-size: 14px
 .aboutSubBox
   margin: 0 auto 150px
   max-width: 980px
@@ -31,7 +42,7 @@
   .subTitle
     font-size: 22px
     font-weight: normal
-    color: #000
+    color: #fff
     margin: 13px 0 20px
   .aboutCptBox
     position: relative
@@ -40,6 +51,8 @@
     .imgBox
       width: 50%
       height: auto
+      @include sp
+        width: 100%
     .txtBox
       position: absolute
       top: 40%
@@ -50,10 +63,19 @@
       border: 1px solid
       text-align: left
       padding: 40px 30px 30px
+      border-radius: 10px
+      @include sp
+        width: 100%
+        right: 0%
+        top: 50%
       .cptTitle
         font-size: 18px
         margin-bottom: 10px
+        color: #fff
       .sentence
         font-size: 16px
         line-height: 1.5
         letter-spacing: 0.6px
+        color: #fff
+        @include sp
+          font-size: 14px
