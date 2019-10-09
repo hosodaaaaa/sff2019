@@ -1,0 +1,73 @@
+extends ../_layout
+block init
+  -
+    const meta = {
+      title: "Student Freepaper Forum",
+      path: '../'
+    }
+    const page = {
+      id: "contest"
+    }
+block contents
+  section.mainChildBox
+  section.contestBox
+    .title CONTEST
+    .subTitle ━ スケジュール
+    .contestImg
+      img(src="../images/contest-1.png", alt="スケジュール")
+  section.contestBox
+    .subTitle ━ 審査基準
+    .contestImg
+      img(src="../images/contest-2.png", alt="審査基準")
+  section.contestBox
+    .subTitle ━ 審査基準
+    p.limited comming soon
+    .contestJudge
+      .contestJudgerInner
+        .judgeImg
+          img(src="", alt="")
+        .judgeProfile
+          p.judgeProfileInner 名前
+          p.judgeProfileInner 会社名
+          p.judgeProfileInner 役職
+  section.contestBox
+    .title INFORMATION
+    .subTitle ━ 参加団体の皆さまへ
+    .warningBox
+      p.sentence ・当日媒体は 100 部～300 部までお持ちいただけます。(冊数は基本300冊までとさせていただきますが、
+        br.pc
+        span.mg
+        | 過去に出展され、冊数が足りないと感じた場合は冊数を増やしていただいて構いません。)
+      p.sentence ・お持ちいただくフリーペーパーは、最新号でもバックナンバーでもお好きな号をお持ちください。
+        br.pc
+        span.mg
+        | (何種類でも可)
+      p.sentence ・媒体が到着しないなどの問題が生じた場合に備え、追跡番号を必ず控えておくようお願いいたします。
+      p.sentence ・基本、イベント終了後に余った媒体はこちらで処分いたします。郵送希望の場合、着払いにて発送になります。
+        br.pc
+        span.mg
+        | 無人ブース出展の場合でご希望の場合は、事前にご連絡ください。
+    .warningSubBox
+      p.sentence ※アワードの配送時にいくつか時間指定ではなく、送付してきたところがありました。今一度ご確認ください。
+      p.sentence ※こちら以外の時間の指定で送られてきても、受け取りは一切できません。
+      p.sentence ※ダンボールの外側（分かるところ）に媒体名・団体名の記載をお願いいたします。
+      p.sentence こちら会場に迷惑となりますので、絶対に時間厳守で日時指定送付をお願いいたします。
+  section.contestBox
+    .subTitle ━ 当日イベントについてのご案内
+    .warningBox
+      p.sentence ・ブース出展料は1000円です。有人ブースの方は、当日受付にてお支払いただきますようお願いいたします。
+        br.pc
+        span.mg
+        | 無人ブース出展の場合は、指定口座まで振り込みをお願いいたします。
+      p.sentence ・当日の出展受付は「テラススクエア」1階のみで行いますので、お気をつけください。
+      p.sentence ・出展者受付は10:20～10:50となっております。必ず時間内に受付を済ませてください。
+      p.sentence ・イベント終了時刻は17:00を予定してます。
+      p.sentence ・イベント会場は、「テラススクエア」、「三井ビルディング」の2会場です。
+      p.sentence ・出展者の皆様は10:20からご入場いただけます。入退場や再入場は自由となっております。
+      p.sentence ・一般来場は11:00からとなっております。
+      p.sentence ・ブースは1団体につき長机半分、若しくは小机1台分のスペースと、椅子2脚ご用意しております。
+      p.sentence ・今年はクローク用意はございません。
+      p.sentence ・貴重品は必ず身につけていただきますようお願いいたします。貴重品を持ち歩くための小さなバッグなど
+        br.pc
+        span.mg
+        | お持ちいただくと便利かと思います。
