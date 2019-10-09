@@ -1,6 +1,9 @@
 @import "../_mixin"
 @import "../_variables"
 
+.mainChildBox
+  .mainTitle
+    background-image: $event
 .eventBox
   margin: 0 auto 150px
   max-width: 1024px
@@ -11,33 +14,40 @@
   .title
     font-size: 34px
     font-weight: bold
-    color: #000
+    color: #fff
   .subTitle
     font-size: 22px
     font-weight: normal
-    color: #000
+    color: #fff
     margin: 13px 0 20px
-  .limited
-    margin: 140px 0 140px
   .eventImgBox
     margin-top: 40px
     display: grid
     grid-template-columns: repeat(4,1fr)
+    @include sp
+      grid-template-columns: repeat(2,1fr)
     .eventImgInner
       margin: 0 12px 40px
       .imgBox
         margin-bottom: 20px
+        img
+          max-height: 280px
+          @include sp
+            max-height: 200px
       .imgTitle
         font-size: 16px
-        color: #000
+        color: #fff
   .eventInfo
     letter-spacing: 1.5px
     margin: 50px auto 20px
     max-width: 680px
     text-align: left
+    color: #fff
     .eventInfoTitle
       float: left
+      height: 24px
     .eventInfoDiscription
       padding-bottom: 8px
+      line-height: 1.3
   #map
     height: 350px
