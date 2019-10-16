@@ -24,13 +24,26 @@ a
 
 .sp
   display: none
-  @include pc
+  @include sp
     display: block
+
+section
+  @include sp
+    padding: 0 5vw
+  &.slide
+    @include sp
+      padding: 0
+.mg
+  margin-right: 20px
+  @include sp
+    margin-right: 0
 
 main
   position: relative
   width: 100%
   height: 100%
+  overflow: hidden
+  background-color: $bgColor
   &::after
     content: ""
     position: absolute
@@ -38,4 +51,44 @@ main
     left: 50%
     width: 100px
     transform: translateX(-50%)
-    border-bottom: 1px solid #000
+    border-bottom: 1px solid #fff
+
+.mainBox
+  height: 100vh
+  width: 100%
+  margin-bottom: 120px
+  background-image: $homeMain
+  background-size: cover
+  background-position: center
+  background-repeat: norepeat
+  position: relative
+  @include sp
+    min-height: 637px
+    background-image: $homeSpMain
+
+
+.mainChildBox
+  height: 100vh
+  width: 100%
+  margin-bottom: 120px
+  background-image: $childMain
+  background-size: cover
+  background-position: center
+  background-repeat: norepeat
+  position: relative
+  @include sp
+    min-height: 637px
+    background-image: $childSpMain
+  .mainTitle
+    width: 500px
+    height: 300px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+.limited
+  margin: 140px 0 140px
+  color: #fff
+  @include sp
+    margin: 18vw 0

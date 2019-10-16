@@ -22,6 +22,7 @@ head
   link(rel="stylesheet", href=`${path}css/sanitize.css`)
   link(rel="stylesheet", href=`${path}css/main.css`)
   link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+  link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
 body(class=page.id || null)
   wrapper
     include _partials/_header.pug
@@ -29,3 +30,6 @@ body(class=page.id || null)
     main
       block contents
     include _partials/_footer.pug
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+  script(src=`${path}js/main.js`)
