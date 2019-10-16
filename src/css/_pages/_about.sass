@@ -15,6 +15,12 @@
   max-width: 1024px
   width: 100%
   text-align: center
+  transition: .4s
+  opacity: 0
+  transform: translateY(50px)
+  &.fadeOn
+    opacity: 1
+    transform: translateY(0px)
   &:first-child
     padding-top: 120px
   .title
@@ -39,6 +45,12 @@
   max-width: 980px
   width: 100%
   text-align: center
+  transition: .4s
+  opacity: 0
+  transform: translateY(50px)
+  &.fadeOn
+    opacity: 1
+    transform: translateY(0px)
   .subTitle
     font-size: 22px
     font-weight: normal
