@@ -1,4 +1,4 @@
-extends _layout.pug
+extends _layout
 block init
   -
     const meta = {
@@ -8,9 +8,21 @@ block init
       id: "home"
     }
 block contents
-  section.itemBox
+  section.mainBox
+  section.homeBox
+    h3.subTitle 私たちの活動を見る
+    ul.ourSnsBox
+      li.ourSnsBoxInner
+        a(href="").faceBook
+      li.ourSnsBoxInner
+        a(href="").twitter
+      li.ourSnsBoxInner
+        a(href="").instaGram
+      li.ourSnsBoxInner
+        a(href="").partner
+  section.homeBox
     .flexBox
-      .imageBox.logo
+      .imageBox.logo.pc
         .imageInner
           img(src="./images/dummy.png", alt="wid")
         .imageInner
@@ -18,12 +30,17 @@ block contents
       .txtBox
         h3.title.min OUR CONCEPT
         p.bigTxt 今年のテーマは「Neo SFF」
+        .imageBox.logo.sp
+          .imageInner
+            img(src="./images/dummy.png", alt="wid")
+          .imageInner
+            img(src="./images/limited-logo.jpg", alt="min")
         p.sentence 「Neo」という言葉には、ギリシャ語では「新しい」、
-          br
+          br.pc
           | 英語では「復活」という意味があリます。SFFが培ってきた
-          br
+          br.pc
           | 14年の歴史を、さらに受け継いでいくための新しさ、そして、
-          br
+          br.pc
           | 新しさを生み出すための原点回帰を目指します。
 
         .minBtn
@@ -31,9 +48,9 @@ block contents
             span.arrow
               span.arrowInner
               span.arrowInner
-  section.itemBox
+  section.homeBox
     .flexBox
-      .imageBox.event
+      .imageBox.event.pc
         .imageInner
           img(src="./images/dummy-02.jpg", alt="wid")
         .imageInner
@@ -41,19 +58,24 @@ block contents
       .txtBox
         h3.title.min EVENT
         p.bigTxt イベントコンセプトは「State Fair」
+        .imageBox.event.sp
+          .imageInner
+            img(src="./images/dummy-02.jpg", alt="wid")
+          .imageInner
+            img(src="./images/dummy-03.jpg", alt="min")
         p.sentence State Fairとは、アメリカ各州で農業や伝統、文化を盛り上げる
-          br
+          br.pc
           | ために行われる年に一度のお祭りです。本来は農産物の品評会を
-          br
+          br.pc
           | 行う場でありましたが、時代の変化とともに、娯楽としての要素
-          br
+          br.pc
           | が強まっていきました。
         .minBtn
           a(href="") MORE
             span.arrow
               span.arrowInner
               span.arrowInner
-  section.itemBox
+  section.homeBox
     h3.title.larg TOPICS & NEWS
     p.subTitle SFFに関する最新の情報を更新していきます。
       .tnBox
@@ -66,25 +88,48 @@ block contents
         article
           .date 2019. 12. 8 (日)
           .desc Student Freepaper Forum2019
-  section.itemBox
+  section.homeBox.slide
     h3.title.larg CONTEST
     p.subTitle ー 2019年、参加団体一覧
     .sliderBox
+      .sliderBoxInner
+        .sliderImgBox
+          img(src="./images/2_ariozo.jpg", alt="2_ariozo")
+        .sliderImgBox
+          img(src="./images/8_backpacker.jpg", alt="8_backpacker")
+        .sliderImgBox
+          img(src="./images/9_fastner.jpg", alt="9_fastner")
+        .sliderImgBox
+          img(src="./images/12_each.jpeg", alt="12_each")
+        .sliderImgBox
+          img(src="./images/24_mix.jpg", alt="24_mix")
+        .sliderImgBox
+          img(src="./images/26_tabiizyo.jpg", alt="26_tabiizyo")
+        .sliderImgBox
+          img(src="./images/27_kuuls.jpg", alt="27_kuuls")
+        .sliderImgBox
+          img(src="./images/31_gift.jpg", alt="31_gift")
+        .sliderImgBox
+          img(src="./images/32_croquis.jpg", alt="32_croquis")
+        .sliderImgBox
+          img(src="./images/43_raw.jpg", alt="43_raw")
+        .sliderImgBox
+          img(src="./images/47_seel.jpg", alt="47_seel")
     .sentence.center SFF2019では昨年までのアワード形式を一転し、
-      br
+      br.pc
       | コンテスト形式を復活させることにしました。
-      br
+      br.pc
       | 今回のコンテストは、プロの目線から評価とフィードバックを
-      br
+      br.pc
       | 受けることができるとともに、作り手側の想いや熱量を
-      br
+      br.pc
       | プレゼンを通じてアピールできる場となっております。
     .minBtn.middle
       a(href="") MORE
         span.arrow
           span.arrowInner
           span.arrowInner
-  section.itemBox
+  section.homeBox
     h3.title.larg BLOG
     p.subTitle ー テキストテキストテキストテキストテキスト
     .widBtn
@@ -92,7 +137,7 @@ block contents
         span.arrow
           span.arrowInner
           span.arrowInner
-  section.itemBox
+  section.homeBox
     h3.title.larg CONTACT
     p.subTitle ー テキストテキストテキストテキストテキスト
     .widBtn
