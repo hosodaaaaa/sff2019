@@ -1,14 +1,29 @@
 @import "../_mixin"
-@import "../_modules/_common"
 @import "../_variables"
 
 .gHamburger
   height: auto
   position: fixed
-  right: 30px
-  top: 30px
+  right: 3%
+  top: 6%
   width: 50px
+  z-index: 999
+  @include sp
+    right: 7%
+    top: 5%
+  &.click
+    .hamBorder
+      &:nth-child(1)
+        transform: rotate(45deg) translate(8px,12px)
+      &:nth-child(2)
+        transform: translateX(20px)
+        opacity: 0
+      &:nth-child(3)
+        transform: rotate(-45deg) translate(1px,-8px)
   .hamBorder
-    border-top: 5px solid #000
+    border-top: 5px solid #fff
     display: block
     margin: 5px 0px
+    transition: .3s
+    transform: rotate(0deg) translate(0px,0px)
+    opacity: 1
