@@ -15,6 +15,12 @@
   max-width: 1024px
   width: 100%
   text-align: center
+  transition: .4s
+  opacity: 0
+  transform: translateY(50px)
+  &.fadeOn
+    opacity: 1
+    transform: translateY(0px)
   &:first-of-type
     padding-top: 120px
   .title
