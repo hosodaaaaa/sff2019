@@ -2,141 +2,176 @@
 @import "../_variables"
 
 .gFooter
-  display: flex
-  justify-content: center
   padding: 80px 100px 15px
-  .contentBox
-    margin-right: 90px
-    .footerTitle
-      font-size: 16px
-      font-weight: 500
-      letter-spacing: 1.3px
-      margin-bottom: 25px
-    .gContent
-      display: grid
-      grid-template-columns: repeat(3,1fr)
-      grid-template-rows: minmax(auto, 80px) repeat(1, 1fr)
-      .gContentInner
-        .contentTitle
-          margin-bottom: 18px
-          font-size: 14px
-        .contentDetail
-          display: flex
-          flex-direction: column
-          a
-            align-items: center
-            color: #000
-            display: flex
-            margin-bottom: 15px
-            .childArrow
-              display: inline-block
-              font-size: 12px
-              margin-right: 7px
-              transform: translateX(0px)
-              transition: .2s
-            @include pc
-              &:hover
-                .childArrow
-                  transform: translateX(3px)
-            .childTxt
-              font-size: 12px
-        &:nth-of-type(4)
-          grid-column-start: 3
-          grid-column-end: 4
-        &:nth-of-type(5)
-          grid-column-start: 4
-          grid-column-end: 5
-          grid-row-start: 1
-          grid-row-end: 2
-  .otherBox
-    .footerTitle
-      font-size: 16px
-      font-weight: 500
-      letter-spacing: 1.3px
-      margin-bottom: 25px
-    .gOtherList
-      display: flex
-      margin-bottom: 15px
-      justify-content: space-between
-      width: 250px
-      a
-        display: block
-        &.faceBook
-          &::before
-            background-image: $facebook
-            background-position: center
-            background-repeat: no-repeat
-            background-size: 100%
-            content: ""
-            display: block
-            height: 35px
-            width: 35px
-        &.twitter
-          &::before
-            background-image: $twitter
-            background-position: center
-            background-repeat: no-repeat
-            background-size: 100%
-            content: ""
-            display: block
-            height: 35px
-            width: 35px
-        &.instaGram
-          &::before
-            background-image: $insta
-            background-position: center
-            background-repeat: no-repeat
-            background-size: 100%
-            content: ""
-            display: block
-            width: 35px
-            height: 35px
-        &.partner
-          &::before
-            background-image: $partner
-            background-repeat: no-repeat
-            background-position: center
-            background-size: 35px
-            content: ""
-            display: block
-            width: 35px
-            height: 35px
-    .gOtherContact
-      border: 1px solid #000
-      text-align: center
-      overflow: hidden
-      @include pc
-        &:hover
-          a
-            color: #fff
-            &::before
-              content: ""
-              position: absolute
-              top: 50%
-              left: 50%
-              border-radius: 50px
-              background-color: #000
-              width: 100%
-              height: 100%
-              opacity: 1
-              transform: translate(-50%,-50%) scale(1.2)
-              z-index: -1
-      a
-        color: #000
-        display: inline-block
-        font-size: 16px
-        padding: 20px 0
-        position: relative
+  background-color: $bgColor
+  @include sp
+    padding: 20vw 8vw 2vw
+  .footerFlexBox
+    display: flex
+    justify-content: center
+    @include sp
+      display: block
+    .contentBox
+      margin-right: 90px
+      @include sp
         width: 100%
-        &::before
-          content: ""
-          position: absolute
-          top: 50%
-          left: 50%
-          transform: translate(-50%,-50%) scale(0)
-          width: 0%
-          height: 0%
-          border-radius: 50px
-          background-color: #fff
-          opacity: 0
-          transition: .2s
+      .footerTitle
+        font-size: 16px
+        font-weight: 500
+        letter-spacing: 1.3px
+        margin-bottom: 25px
+        color: #fff
+      .gContent
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        .gContentInner
+          margin-right: 20px
+          width: 21%
+          @include sp
+            margin-right: 5vw
+            margin-bottom: 5vw
+            width: 40%
+          .contentTitle
+            margin-bottom: 18px
+            font-size: 14px
+            color: #fff
+          .contentDetail
+            display: flex
+            flex-direction: column
+            a
+              align-items: center
+              color: #fff
+              display: flex
+              margin-bottom: 15px
+              .childArrow
+                display: inline-block
+                font-size: 12px
+                margin-right: 7px
+                transform: translateX(0px)
+                transition: .2s
+              @include pc
+                &:hover
+                  .childArrow
+                    transform: translateX(3px)
+              .childTxt
+                font-size: 12px
+          nav
+            ul
+              .gContentInner
+                width: 100%
+                margin-top: 20px
+                @include sp
+                  margin-top: 5vw
+                  margin-right: 0
+    .otherBox
+      @include sp
+        margin-top: 12vw
+      .footerTitle
+        font-size: 16px
+        font-weight: 500
+        letter-spacing: 1.3px
+        margin-bottom: 25px
+        color: #fff
+      .gOtherList
+        display: flex
+        margin-bottom: 15px
+        justify-content: space-between
+        width: 250px
+        @include sp
+          margin: 0 auto 6vw
+        a
+          display: block
+          &.faceBook
+            &::before
+              background-image: $facebook
+              background-position: center
+              background-repeat: no-repeat
+              background-size: 100%
+              content: ""
+              display: block
+              height: 35px
+              width: 35px
+          &.twitter
+            &::before
+              background-image: $twitter
+              background-position: center
+              background-repeat: no-repeat
+              background-size: 100%
+              content: ""
+              display: block
+              height: 35px
+              width: 35px
+          &.instaGram
+            &::before
+              background-image: $insta
+              background-position: center
+              background-repeat: no-repeat
+              background-size: 100%
+              content: ""
+              display: block
+              width: 35px
+              height: 35px
+          &.partner
+            &::before
+              background-image: $partner
+              background-repeat: no-repeat
+              background-position: center
+              background-size: 35px
+              content: ""
+              display: block
+              width: 35px
+              height: 35px
+      .gOtherContact
+        border: 1px solid #fff
+        text-align: center
+        overflow: hidden
+        @include pc
+          &:hover
+            a
+              color: #000
+              &::before
+                content: ""
+                position: absolute
+                top: 50%
+                left: 50%
+                border-radius: 50px
+                background-color: #fff
+                width: 100%
+                height: 100%
+                opacity: 1
+                transform: translate(-50%,-50%) scale(1.2)
+                z-index: -1
+        a
+          color: #fff
+          display: inline-block
+          font-size: 16px
+          padding: 20px 0
+          position: relative
+          width: 100%
+          z-index: 1
+          &::before
+            content: ""
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%) scale(0)
+            width: 0%
+            height: 0%
+            border-radius: 50px
+            opacity: 0
+            transition: .2s
+  .cprTxtBox
+    margin-top: 70px
+    margin-bottom: 30px
+    text-align: center
+    @include sp
+      margin-top: 10vw
+      margin-bottom: 20vw
+    .cptTxt
+      color: #fff
+      letter-spacing: 1.5px
+      font-size: 11px
+      @include sp
+        font-size: 3vw
+        letter-spacing: .3vw
