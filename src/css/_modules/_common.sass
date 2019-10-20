@@ -27,6 +27,11 @@ a
   @include sp
     display: block
 
+#map
+  max-width: 680px
+  width: 100%
+  margin: 0 auto
+
 section
   @include sp
     padding: 0 5vw
@@ -37,6 +42,9 @@ section
   margin-right: 20px
   @include sp
     margin-right: 0
+
+body.fix
+  overflow: hidden
 
 main
   position: relative
@@ -56,7 +64,6 @@ main
 .mainBox
   height: 100vh
   width: 100%
-  margin-bottom: 120px
   background-image: $homeMain
   background-size: cover
   background-position: center
@@ -70,7 +77,6 @@ main
 .mainChildBox
   height: 100vh
   width: 100%
-  margin-bottom: 120px
   background-image: $childMain
   background-size: cover
   background-position: center
@@ -79,13 +85,6 @@ main
   @include sp
     min-height: 637px
     background-image: $childSpMain
-  .mainTitle
-    width: 500px
-    height: 300px
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%,-50%)
 
 .limited
   margin: 140px 0 140px

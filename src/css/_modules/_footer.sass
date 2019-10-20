@@ -13,6 +13,7 @@
       display: block
     .contentBox
       margin-right: 90px
+      width: 50%
       @include sp
         width: 100%
       .footerTitle
@@ -32,6 +33,14 @@
             margin-right: 5vw
             margin-bottom: 5vw
             width: 40%
+          &:nth-child(2)
+            width: 17%
+            @include sp
+              width: 40%
+          &:nth-child(3)
+            width: 28%
+            @include sp
+              width: 40%
           .contentTitle
             margin-bottom: 18px
             font-size: 14px
@@ -150,6 +159,9 @@
           position: relative
           width: 100%
           z-index: 1
+          @include sp
+            color: #000
+            background-color: #fff
           &::before
             content: ""
             position: absolute

@@ -1,29 +1,37 @@
 header.gHeader
   ul.gNav
-    li.gNavInner
-      a(href="").top.visible
-    li.gNavInner
-      a(href="").about.visible
-    li.gNavInner
-      a(href="").event.visible
-    li.gNavInner
-      a(href="").tn.visible
-    li.gNavInner
-      a(href="").contest.visible
-    li.gNavInner
-      a(href="").blog.visible
-    li.gNavInner
-      a(href="https://forms.gle/pWooQHANxXuTR5867" target="_blank").contact.visible
-  ul.gOther
-    li.gOtherInner
+    li.gNavInner.top
+      a(href=`${path}`).visible
+        img(src=`${path}images/menu-icon-1.svg`, alt="top")
+    li.gNavInner.about
+      a(href=`${path}/about/`).visible
+        img(src=`${path}/images/menu-icon-2.svg`, alt="about")
+    li.gNavInner.event
+      a(href=`${path}/event/`).visible
+        img(src=`${path}/images/menu-icon-3.svg`, alt="event")
+    li.gNavInner.tn
+      a(href="#tn").visible
+        img(src=`${path}/images/menu-icon-4.svg`, alt="news&topics")
+    li.gNavInner.contest
+      a(href=`${path}/contest/`).contest.visible
+        img(src=`${path}/images/menu-icon-5.svg`, alt="contest")
+    li.gNavInner.blog
+      a(href="https://partner-web.jp/writer/?id=103").visible
+        img(src=`${path}/images/menu-icon-6.svg`, alt="blog")
+    li.gNavInner.contact
+      a(href="https://forms.gle/pWooQHANxXuTR5867" target="_blank").visible
+        img(src=`${path}/images/menu-icon-7.svg`, alt="contact")
+  .gOther
+    .gOtherInner
       p.followMe Follow - us
       hr.gBorder
-    li.gNavInner
-      a(href="").faceBook
-    li.gNavInner
-      a(href="").twitter
-    li.gNavInner
-      a(href="").instaGram
-    li.gNavInner
-      a(href="").partner
+    ul.gNavSns
+      li.gNavInner
+        a(href="https://www.facebook.com/sff.web/").faceBook
+      li.gNavInner
+        a(href="https://twitter.com/SFF__2019").twitter
+      li.gNavInner
+        a(href="https://www.instagram.com/sff2019.event/").instaGram
+      li.gNavInner
+        a(href="https://partner-web.jp/writer/?id=103").partner
   .hamBackMove

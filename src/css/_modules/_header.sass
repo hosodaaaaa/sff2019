@@ -12,9 +12,23 @@
   &.open
     .gNav
       visibility: visible
-      animation-name: fadeIn
+      animation-name: menuIn
       animation-duration: .9s
-    @keyframes fadeIn
+    @keyframes menuIn
+      0%
+        visibility: hidden
+        opacity: 0
+      50%
+        visibility: visible
+        opacity: .2
+      100%
+        visibility: visible
+        opacity: 1
+    .gOther
+      visibility: visible
+      animation-name: snsIn
+      animation-duration: .9s
+    @keyframes snsIn
       0%
         visibility: hidden
         opacity: 0
@@ -33,9 +47,9 @@
   &.close
     .gNav
       visibility: hidden
-      animation-name: fadeOut
+      animation-name: menuOut
       animation-duration: .6s
-    @keyframes fadeOut
+    @keyframes menuOut
       100%
         visibility: visible
         opacity: 1
@@ -46,113 +60,98 @@
         visibility: hidden
         opacity: 0
     .gOther
-      visibility: visible
+      visibility: hidden
+      animation-name: snsOut
+      animation-duration: .6s
+    @keyframes snsOut
+      100%
+        visibility: visible
+        opacity: 1
+      50%
+        visibility: visible
+        opacity: .5
+      100%
+        visibility: hidden
+        opacity: 0
   .gNav
-    padding-top: 85px
+    padding-top: 40px
     text-align: center
     height: 700px
     width: 100%
     visibility: hidden
-    transition: .4s
     position: fixed
+    top: 10%
+    left: 0
+    @include sp
+      padding-top: 0
+      height: auto
     .gNavInner
-      height: 80px
-      width: 300px
-      margin: 0 auto 10px
+      height: auto
+      margin: 0 auto 40px
       position: relative
-      height: 80px
       display: block
       &.top
-        &::before
-          background-image: $top
-          background-position: 50px,50px
-          background-repeat: no-repeat
-          background-size: 100%
-          content: ""
-          display: block
-          height: 80px
+        width: 8%
+        @include sp
+          width: 22%
       &.about
-        &::before
-          background-image: $about
-          background-position: 50px,50px
-          background-repeat: no-repeat
-          background-size: 100%
-          content: ""
-          display: block
-          height: 80px
+        width: 15%
+        @include sp
+          width: 40%
       &.event
-        &::before
-          background-image: $event
-          background-position: 50px,50px
-          background-repeat: no-repeat
-          background-size: 100%
-          content: ""
-          display: block
-          height: 80px
+        width: 14%
+        @include sp
+          width: 37%
       &.tn
-        &::before
-          background-image: $tn
-          background-position: 50px,50px
-          background-repeat: no-repeat
-          background-size: 100%
-          content: ""
-          display: block
-          height: 80px
+        width: 33%
+        @include sp
+          width: 75%
       &.contest
-        &::before
-          background-image: $contest
-          background-position: 50px,50px
-          background-repeat: no-repeat
-          background-size: 100%
-          content: ""
-          display: block
-          height: 80px
+        width: 19%
+        @include sp
+          width: 52%
       &.blog
-        &::before
-          background-image: $blog
-          background-position: 50px,50px
-          background-repeat: no-repeat
-          background-size: 100%
-          content: ""
-          display: block
-          height: 80px
+        width: 11%
+        @include sp
+          width: 30%
       &.contact
-        &::before
-          background-image: $contact
-          background-position: 50px,50px
-          background-repeat: no-repeat
-          background-size: 100%
+        width: 20%
+        @include sp
+          width: 55%
+      a
+        display: block
+        @include pc
+          &:hover
+            &::after
+              opacity: 1
+              transform: scaleX(1.2)
+        &::after
+          border-top: 8px solid #fff
           content: ""
-          display: block
-          height: 80px
-      &::after
-        border-top: 8px solid #fff
-        content: ""
-        left: -7%
-        opacity: 0
-        position: absolute
-        top: 45%
-        transform: scaleX(0)
-        transition: .2s
-        width: 110%
-      @include pc
-        &:hover
-          &::after
-            opacity: 1
-            transform: scaleX(1.2)
+          left: 0
+          opacity: 0
+          position: absolute
+          top: 45%
+          transform: scaleX(0)
+          transition: .2s
+          width: 100%
   .gOther
     bottom: 30px
     display: flex
     left: 30px
     position: absolute
     visibility: hidden
-    transition: .4s
     position: fixed
     @include sp
-      display: none
+      bottom: 90px
+      left: 50%
+      transform: translateX(-50%)
+      display: block
     .gOtherInner
       align-items: center
       display: flex
+      @include sp
+        margin-bottom: 30px
       .followMe
         color: #fff
         font-size: 14px
@@ -161,52 +160,56 @@
         color: #fff
         margin-right: 30px
         width: 30px
-    .gNavInner
-      margin-right: 30px
-      height: 35px
-      width: 35px
-      a
-        display: block
-        &.faceBook
-          &::before
-            background-image: $facebook
-            background-position: center
-            background-repeat: no-repeat
-            background-size: 100%
-            content: ""
-            display: block
-            height: 35px
-            width: 35px
-        &.twitter
-          &::before
-            background-image: $twitter
-            background-position: center
-            background-repeat: no-repeat
-            background-size: 100%
-            content: ""
-            display: block
-            height: 35px
-            width: 35px
-        &.instaGram
-          &::before
-            background-image: $insta
-            background-position: center
-            background-repeat: no-repeat
-            background-size: 100%
-            content: ""
-            display: block
-            width: 35px
-            height: 35px
-        &.partner
-          &::before
-            background-image: $partner
-            background-repeat: no-repeat
-            background-position: center
-            background-size: 35px
-            content: ""
-            display: block
-            width: 35px
-            height: 35px
+        @include sp
+          margin-right: 130px
+    .gNavSns
+      display: flex
+      .gNavInner
+        margin-right: 30px
+        height: 35px
+        width: 35px
+        a
+          display: block
+          &.faceBook
+            &::before
+              background-image: $facebook
+              background-position: center
+              background-repeat: no-repeat
+              background-size: 100%
+              content: ""
+              display: block
+              height: 35px
+              width: 35px
+          &.twitter
+            &::before
+              background-image: $twitter
+              background-position: center
+              background-repeat: no-repeat
+              background-size: 100%
+              content: ""
+              display: block
+              height: 35px
+              width: 35px
+          &.instaGram
+            &::before
+              background-image: $insta
+              background-position: center
+              background-repeat: no-repeat
+              background-size: 100%
+              content: ""
+              display: block
+              width: 35px
+              height: 35px
+          &.partner
+            &::before
+              background-image: $partner
+              background-repeat: no-repeat
+              background-position: center
+              background-size: 35px
+              content: ""
+              display: block
+              width: 35px
+              height: 35px
   .hamBackMove
     width: 350px
     height: 350px
@@ -216,7 +219,7 @@
     right: -12%
     z-index: -1
     background: #000
-    transition: .6s cubic-bezier(.95, .05, .795, .035)
+    transition: .6s cubic-bezier(0.39, 0.575, 0.565, 1)
     @include sp
       top: -25%
       right: -55%
