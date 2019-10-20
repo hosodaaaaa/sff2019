@@ -2,16 +2,18 @@
 @import "../_variables"
 
 .mainChildBox
-  .mainTitle
-    width: 500px
-    height: 300px
-    background-image: $contest
+  .contestTitle
+    width: 540px
+    height: 120px
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
+    @include sp
+      width: 280px
 .contestBox
-  margin: 0 auto 150px
+  margin: 0 auto
+  padding-top: 150px
   max-width: 1024px
   width: 100%
   text-align: center

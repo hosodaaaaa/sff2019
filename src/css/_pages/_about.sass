@@ -2,16 +2,18 @@
 @import "../_variables"
 
 .mainChildBox
-  .mainTitle
-    width: 500px
-    height: 300px
-    background-image: $about
+  .aboutTitle
+    width: 400px
+    height: 120px
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
+    @include sp
+      width: 280px
 .aboutBox
-  margin: 0 auto 150px
+  margin: 0 auto
+  padding-top: 150px
   max-width: 1024px
   width: 100%
   text-align: center
@@ -70,24 +72,25 @@
       top: 40%
       right: 10%
       width: 50%
-      height: 320px
+      height: 260px
       background-color: #fff
       border: 1px solid
       text-align: left
-      padding: 40px 30px 30px
+      padding: 30px
       border-radius: 10px
       @include sp
         width: 100%
         right: 0%
-        top: 50%
+        top: 48%
+        height: 320px
       .cptTitle
         font-size: 18px
         margin-bottom: 10px
-        color: #fff
+        color: #000
       .sentence
         font-size: 16px
         line-height: 1.5
         letter-spacing: 0.6px
-        color: #fff
+        color: #000
         @include sp
           font-size: 14px

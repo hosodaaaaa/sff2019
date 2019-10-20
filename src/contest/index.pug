@@ -10,17 +10,17 @@ block init
     }
 block contents
   section.mainChildBox
-    .mainTitle
-  section.contestBox
-    .title CONTEST
+    .contestTitle
+      img(src=`${path}/images/menu-icon-5.svg`, alt="")
+  section#contestSch.contestBox
     .subTitle ━ スケジュール
     .contestImg
       img(src="../images/contest-1.png", alt="スケジュール")
-  section.contestBox
+  section#contestJude.contestBox
     .subTitle ━ 審査基準
     .contestImg
       img(src="../images/contest-2.png", alt="審査基準")
-  section.contestBox
+  section#contestJude02.contestBox
     .subTitle ━ 審査基準
     p.limited comming soon
     .contestJudge
@@ -31,7 +31,7 @@ block contents
           p.judgeProfileInner 名前
           p.judgeProfileInner 会社名
           p.judgeProfileInner 役職
-  section.contestBox
+  section#contestInf.contestBox
     .title INFORMATION
     .subTitle ━ 参加団体の皆さまへ
     .warningBox
@@ -53,7 +53,7 @@ block contents
       p.sentence ※こちら以外の時間の指定で送られてきても、受け取りは一切できません。
       p.sentence ※ダンボールの外側（分かるところ）に媒体名・団体名の記載をお願いいたします。
       p.sentence こちら会場に迷惑となりますので、絶対に時間厳守で日時指定送付をお願いいたします。
-  section.contestBox
+  section#contesGui.contestBox
     .subTitle ━ 当日イベントについてのご案内
     .warningBox
       p.sentence ・ブース出展料は1000円です。有人ブースの方は、当日受付にてお支払いただきますようお願いいたします。

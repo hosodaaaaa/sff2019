@@ -10,9 +10,9 @@ block init
     }
 block contents
   section.mainChildBox
-    .mainTitle
-  section.eventBox
-    .title EVENT
+    .eventTitle
+      img(src=`${path}/images/menu-icon-3.svg`, alt="")
+  section#eventMem.eventBox
     p.subTitle ━ 学生出展媒体一覧
     .eventImgBox
       .eventImgInner
@@ -59,15 +59,15 @@ block contents
         .imgBox
           img(src="../images/47_seel.jpg", alt="47_seel")
         .imgTitle Seel
-  section.eventBox
+  section#eventSch.eventBox
     .title TIMETABLE
     p.subTitle ━  当日の流れ
     p.limited comming soon
-  section.eventBox
+  section#eventWor.eventBox
     .title WORKSHOP
     p.subTitle ━  体験しよう！
     p.limited comming soon
-  section.eventBox
+  section#eventAcc.eventBox
     .title ACCESS
     p.subTitle ━ 会場詳細
     dl.eventInfo

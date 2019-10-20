@@ -2,10 +2,18 @@
 @import "../_variables"
 
 .mainChildBox
-  .mainTitle
-    background-image: $event
+  .eventTitle
+    width: 420px
+    height: 120px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    @include sp
+      width: 280px
 .eventBox
-  margin: 0 auto 150px
+  margin: 0 auto
+  padding-top: 150px
   max-width: 1024px
   width: 100%
   text-align: center

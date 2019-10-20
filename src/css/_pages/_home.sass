@@ -2,13 +2,16 @@
 @import "../_variables"
 
 .homeBox
-  margin: 0 auto 150px
+  margin: 0 auto
+  padding-top: 150px
   max-width: 1024px
   width: 100%
   transition: .4s
   opacity: 0
   transform: translateY(50px)
   @include pc
+    &:last-child
+      margin-bottom: 150px
     &:nth-child(4)
       .flexBox
         display: flex
@@ -140,6 +143,9 @@
       overflow: hidden
       position: relative
       z-index: 1
+      @include sp
+        color: #000
+        background-color: #fff
       &::before
         content: ""
         position: absolute
@@ -169,6 +175,8 @@
             top: 50%
             transform: rotate(45deg) translate(-50%, -50%)
             width: 10px
+            @include sp
+              border-bottom: 1px solid #000
           &:nth-child(2)
             border-bottom: 1px solid #fff
             display: block
@@ -177,10 +185,13 @@
             top: 50%
             transform: rotate(-45deg) translate(-50%, -50%)
             width: 10px
+            @include sp
+              border-bottom: 1px solid #000
   .larg
     font-size: 28px
     text-align: center
     color: #fff
+    margin-bottom: 25px
   .subTitle
     font-size: 16px
     margin: 26px 0 40px
@@ -195,7 +206,7 @@
       letter-spacing: 2px
       color: #fff
       @include sp
-        padding: 0 5vw
+        padding: 0 3vw
   .middle
     margin: 50px auto
     @include sp
@@ -344,6 +355,9 @@
       overflow: hidden
       position: relative
       z-index: 1
+      @include sp
+        color: #000
+        background-color: #fff
       &::before
         content: ""
         position: absolute
@@ -373,6 +387,8 @@
             top: 50%
             transform: rotate(45deg) translate(-50%, -50%)
             width: 10px
+            @include sp
+              border-bottom: 1px solid #000
           &:nth-child(2)
             border-bottom: 1px solid #fff
             display: block
@@ -381,3 +397,5 @@
             top: 50%
             transform: rotate(-45deg) translate(-50%, -50%)
             width: 10px
+            @include sp
+              border-bottom: 1px solid #000
