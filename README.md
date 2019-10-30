@@ -11,3 +11,11 @@ develop for sff2019
 :lipstick: cosmetic<br>
 :construction: WIP<br>
 :zap: General update
+
+## 環境
+node  
+v12.9.0  
+
+npm  
+v6.10.2  
+
