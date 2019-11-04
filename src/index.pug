@@ -10,6 +10,20 @@ block init
 block contents
   section.mainBox
   section.homeBox
+    .mainSentence Student Freepaper Forum
+      br.sp
+      |（通称SFF）とは？
+      br
+      | 「フリーペーパー 」というメディアを軸に
+      br
+      | 学生と社会を繋ぐ交流地点を作ることを
+      br.sp
+      | ミッションとしている学生団体です。
+    .mainSentence 国内最大級の学生フリーペーパーの祭典 SFF2019
+      br
+      | 2019.12.8 (sun)  11:00〜17:00 　＠神保町テラススクエア
+      br
+      | 入場無料！！
     h3.subTitle 私たちの活動を見る
     ul.ourSnsBox
       li.ourSnsBoxInner
@@ -22,55 +36,61 @@ block contents
         a(href="https://partner-web.jp/writer/?id=103").partner
   section.homeBox
     .flexBox
-      .imageBox.logo.pc
+      .imageBox.event.pc
         .imageInner
-          img(src="./images/dummy.png", alt="wid")
+          img(src=`${path}/images/dummy-02.jpg`, alt="wid")
         .imageInner
-          img(src="./images/limited-logo.jpg", alt="min")
+          img(src=`${path}images/dummy-03.jpg`, alt="min")
       .txtBox
-        h3.title.min OUR CONCEPT
-        p.bigTxt 今年のテーマは「Neo SFF」
-        .imageBox.logo.sp
+        h3.title.min EVENT
+        p.bigTxt 全国の学生フリーペーパーが一同に集結
+        .imageBox.event.sp
           .imageInner
-            img(src="./images/dummy.png", alt="wid")
+            img(src=`${path}images/dummy-02.jpg`, alt="wid")
           .imageInner
-            img(src="./images/limited-logo.jpg", alt="min")
-        p.sentence 「Neo」という言葉には、ギリシャ語では「新しい」、
+            img(src=`${path}images/dummy-03.jpg`, alt="min")
+        p.sentence 年に一度のフリーペーパーの祭典を今年も開催。
           br.pc
-          | 英語では「復活」という意味があリます。SFFが培ってきた
+          | 全国の大学生が作成した約60種類の学生フリーペーパーが一同
           br.pc
-          | 14年の歴史を、さらに受け継いでいくための新しさ、そして、
+          | に集まる国内最大級フリーペーパーの祭典、Student
           br.pc
-          | 新しさを生み出すための原点回帰を目指します。
+          | Freeparer Forum 2019（以下、SFF2019）を12月8日(日) に
+          br.pc
+          | 東京の本の街、神保町にて開催します。
         .minBtn
-          a(href="./about/") MORE
+          a(href=`${path}/event/`) MORE
             span.arrow
               span.arrowInner
               span.arrowInner
   section.homeBox
     .flexBox
-      .imageBox.event.pc
+      .imageBox.logo.pc
         .imageInner
-          img(src="./images/dummy-02.jpg", alt="wid")
+          img(src=`${path}images/dummy.png`, alt="wid")
         .imageInner
-          img(src="./images/dummy-03.jpg", alt="min")
+          img(src=`${path}images/limited-logo.jpg`, alt="min")
       .txtBox
-        h3.title.min EVENT
-        p.bigTxt イベントコンセプトは「State Fair」
-        .imageBox.event.sp
+        h3.title.min OUR CONCEPT
+        p.bigTxt 今年のテーマは「Neo SFF」
+        .imageBox.logo.sp
           .imageInner
-            img(src="./images/dummy-02.jpg", alt="wid")
+            img(src=`${path}images/dummy.png`, alt="wid")
           .imageInner
-            img(src="./images/dummy-03.jpg", alt="min")
-        p.sentence State Fairとは、アメリカ各州で農業や伝統、文化を盛り上げる
+            img(src=`${path}images/limited-logo.jpg`, alt="min")
+        p.sentence SFFの今年のテーマは「NEO SFF」
           br.pc
-          | ために行われる年に一度のお祭りです。本来は農産物の品評会を
+          | 「NEO」は、ギリシャ語では「新しい」・英語では「復活」と
           br.pc
-          | 行う場でありましたが、時代の変化とともに、娯楽としての要素
+          | いう意味があります。
           br.pc
-          | が強まっていきました。
+          | SFFが培ってきた14年の歴史をさらに受け継いでいくための”新
+          br.pc
+          | しさ”、そしてさらなる新しさを生み出すための原点回帰を目指
+          br.pc
+          | すという意味が込められています。
         .minBtn
-          a(href="./event/") MORE
+          a(href=`${path}/about/`) MORE
             span.arrow
               span.arrowInner
               span.arrowInner
@@ -79,41 +99,115 @@ block contents
     p.subTitle SFFに関する最新の情報を更新していきます。
       .tnBox
         article
-          .date 2019. 9. 1 (日)
-          .desc 真夏のSFF2019
-        //- article.tnBox
-        //-   .date 2019.11.3〜4 (日)
-        //-   .desc ICU祭
-        article
-          .date 2019. 12. 8 (日)
+          .date 2019.12.8 (日)
           .desc Student Freepaper Forum2019
+        article.tnBox
+          .date 2019.11.16 (土)、 17(日)
+          .desc 特別審査　in　東京、大阪
+        article
+          .date 2019. 10.31 (木)
+          .desc ブース出展受付　締切
   section.homeBox.slide
     h3.title.larg CONTEST
-    p.subTitle ー 2019年、参加団体一覧
+    p.subTitle 2019年、参加団体一覧
     .sliderBox
       .sliderBoxInner
         .sliderImgBox
-          img(src="./images/2_ariozo.jpg", alt="2_ariozo")
+          img(src=`${path}images/1_Magadipita.jpg`, alt="1_Magadipita")
         .sliderImgBox
-          img(src="./images/8_backpacker.jpg", alt="8_backpacker")
+          img(src=`${path}images/2_ariozo.jpg`, alt="2_ariozo")
         .sliderImgBox
-          img(src="./images/9_fastner.jpg", alt="9_fastner")
+          img(src=`${path}images/3_bootleg.jpg`, alt="3_bootleg")
         .sliderImgBox
-          img(src="./images/12_each.jpeg", alt="12_each")
+          img(src=`${path}images/4_outmeiji.jpg`, alt="4_outmeiji")
         .sliderImgBox
-          img(src="./images/24_mix.jpg", alt="24_mix")
+          img(src=`${path}images/5_tot.jpg`, alt="5_tot")
         .sliderImgBox
-          img(src="./images/26_tabiizyo.jpg", alt="26_tabiizyo")
+          img(src=`${path}images/7_wasekichi.jpg`, alt="7_wasekichi")
         .sliderImgBox
-          img(src="./images/27_kuuls.jpg", alt="27_kuuls")
+          img(src=`${path}images/8_backpacker.jpg`, alt="8_backpacker")
         .sliderImgBox
-          img(src="./images/31_gift.jpg", alt="31_gift")
+          img(src=`${path}images/9_fastner.jpg`, alt="9_fastner")
         .sliderImgBox
-          img(src="./images/32_croquis.jpg", alt="32_croquis")
+          img(src=`${path}images/10_ReGo.jpg`, alt="10_ReGo")
         .sliderImgBox
-          img(src="./images/43_raw.jpg", alt="43_raw")
+          img(src=`${path}images/11_watcha.jpg`, alt="11_watcha")
         .sliderImgBox
-          img(src="./images/47_seel.jpg", alt="47_seel")
+          img(src=`${path}images/12_each.jpeg`, alt="12_each")
+        .sliderImgBox
+          img(src=`${path}images/13_lovehotelzukan.jpeg`, alt="13_lovehotelzukan")
+        .sliderImgBox
+          img(src=`${path}images/14_whim.jpeg`, alt="14_whim")
+        .sliderImgBox
+          img(src=`${path}images/15_SAN.jpeg`, alt="15_SAN")
+        .sliderImgBox
+          img(src=`${path}images/17_komastry.jpeg`, alt="17_komastry")
+        .sliderImgBox
+          img(src=`${path}images/18_Twinkle.jpeg`, alt="18_Twinkle")
+        .sliderImgBox
+          img(src=`${path}images/20_brauz.jpeg`, alt="20_brauz")
+        .sliderImgBox
+          img(src=`${path}images/21_wasedakoukoku.jpeg`, alt="21_wasedakoukoku")
+        .sliderImgBox
+          img(src=`${path}images/22_kotonoha.jpeg`, alt="22_kotonoha")
+        .sliderImgBox
+          img(src=`${path}images/23_mejimag.jpeg`, alt="23_mejimag")
+        .sliderImgBox
+          img(src=`${path}images/24_mix.jpg`, alt="24_mix")
+        .sliderImgBox
+          img(src=`${path}images/25_mA.jpg`, alt="25_mA")
+        .sliderImgBox
+          img(src=`${path}images/26_tabiizyo.jpg`, alt="26_tabiizyo")
+        .sliderImgBox
+          img(src=`${path}images/27_kuuls.jpg`, alt="27_kuuls")
+        .sliderImgBox
+          img(src=`${path}images/28_ikor.jpg`, alt="28_ikor")
+        .sliderImgBox
+          img(src=`${path}images/29_chotbetter.jpg`, alt="29_chotbetter")
+        .sliderImgBox
+          img(src=`${path}images/30_blooming.jpg`, alt="30_blooming")
+        .sliderImgBox
+          img(src=`${path}images/31_gift.jpg`, alt="31_gift")
+        .sliderImgBox
+          img(src=`${path}images/32_croquis.jpg`, alt="32_croquis")
+        .sliderImgBox
+          img(src=`${path}images/35_KooBee.jpg`, alt="35_KooBee")
+        .sliderImgBox
+          img(src=`${path}images/36_GMODE.jpg`, alt="36_GMODE")
+        .sliderImgBox
+          img(src=`${path}images/38_homegrow.jpg`, alt="38_homegrow")
+        .sliderImgBox
+          img(src=`${path}images/39_ReALL.jpg`, alt="39_ReALL")
+        .sliderImgBox
+          img(src=`${path}images/40_UUPRAS.jpg`, alt="40_UUPRAS")
+        .sliderImgBox
+          img(src=`${path}images/41_iki.jpg`, alt="41_iki")
+        .sliderImgBox
+          img(src=`${path}images/42_Apollo.jpg`, alt="42_Apollo")
+        .sliderImgBox
+          img(src=`${path}images/43_raw.jpg`, alt="43_raw")
+        .sliderImgBox
+          img(src=`${path}images/44_VIVID.jpg`, alt="44_VIVID")
+        .sliderImgBox
+          img(src=`${path}images/45_LinKU.jpg`, alt="45_LinKU")
+        .sliderImgBox
+          img(src=`${path}images/47_seel.jpg`, alt="47_seel")
+        .sliderImgBox
+          img(src=`${path}images/48_IU.jpg`, alt="48_IU")
+        .sliderImgBox
+          img(src=`${path}images/49_in.jpg`, alt="47_seel")
+        .sliderImgBox
+          img(src=`${path}images/51_wasedalinks.jpg`, alt="51_wasedalinks")
+        .sliderImgBox
+          img(src=`${path}images/52_TanTan.jpg`, alt="52_TanTan")
+        .sliderImgBox
+          img(src=`${path}images/54_R'smagazine.jpg`, alt="54_R'smagazine")
+        .sliderImgBox
+          img(src=`${path}images/57_SPC.jpg`, alt="57_SPC")
+        .sliderImgBox
+          img(src=`${path}images/58_Ricerca.jpg`, alt="58_Ricerca")
+        .sliderImgBox
+          img(src=`${path}images/59_Revo.jpg`, alt="59_Revo")
     .sentence.center SFF2019では
       br.sp
       | 昨年までのアワード形式を一転し、
@@ -132,21 +226,16 @@ block contents
       br.sp
       | 場となっております。
     .minBtn.middle
-      a(href="./contest/") MORE
+      a(href=`${path}/contest/`) MORE
         span.arrow
           span.arrowInner
           span.arrowInner
-  section.homeBox
-    h3.title.larg BLOG
-    .widBtn
-      a(href="https://partner-web.jp/writer/?id=103") 最新の記事を見る
-        span.arrow
-          span.arrowInner
-          span.arrowInner
-  section.homeBox
-    h3.title.larg CONTACT
-    .widBtn
-      a(href="https://forms.gle/pWooQHANxXuTR5867") お問い合わせ
-        span.arrow
-          span.arrowInner
-          span.arrowInner
+  section#contestJude02.homeBox
+    h3.title.larg SPONSOR
+    ul.campList
+      li.campListInner test Inc.
+      li.campListInner test Inc.
+      li.campListInner test Inc.
+      li.campListInner test Inc.
+      li.campListInner test Inc.
+      li.campListInner test Inc.

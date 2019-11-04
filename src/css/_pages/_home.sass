@@ -10,12 +10,16 @@
   opacity: 0
   transform: translateY(50px)
   @include pc
-    &:last-child
-      margin-bottom: 150px
     &:nth-child(4)
       .flexBox
         display: flex
         flex-direction: row-reverse
+        .txtBox
+          width: 50%
+          margin-right: 50px
+          margin-left: 0
+          @include sp
+            margin-right: 0
   @include sp
     padding-top: 100px
   &.fadeOn
@@ -23,6 +27,17 @@
     transform: translateY(0px)
   &.slide
     max-width: 100%
+  .mainSentence
+    text-align: center
+    color: #fff
+    margin-bottom: 50px
+    line-height: 1.8
+    letter-spacing: 1.5px
+  .mainSentence
+    + .subTitle
+      margin: 26px 0 25px
+      @include sp
+        margin: 2vw 0 4vw
   .flexBox
     display: flex
     flex-direction: row
@@ -77,8 +92,10 @@
               width: 70vw
     .txtBox
       width: 50%
+      margin-left: 50px
       @include sp
         width: 100%
+        margin-left: 0
       .min
         font-size: 16px
         font-weight: normal
@@ -207,8 +224,16 @@
       color: #fff
       @include sp
         padding: 0 3vw
+  .campList
+    margin-top: 60px
+    text-align: center
+    .campListInner
+      color: #fff
+      font-size: 18px
+      letter-spacing: 1.5px
+      margin-bottom: 14px
   .middle
-    margin: 50px auto
+    margin: 50px auto 0
     @include sp
       margin: 5vw 0 0
   .tnBox
@@ -225,7 +250,7 @@
         border-top: none
       .date
         margin-right: 50px
-        width: 14%
+        width: 18%
         color: #fff
         @include sp
           width: 100%
@@ -283,7 +308,7 @@
   .sliderBox
     margin: 40px 0 30px
     position: relative
-    height: 190px
+    height: 280px
     width: 100%
     overflow: hidden
     @include sp
