@@ -31,11 +31,20 @@
     font-size: 34px
     font-weight: bold
     color: #fff
+    @include sp
+      font-size: 22px
   .subTitle
     font-size: 22px
     font-weight: normal
     color: #fff
     margin: 13px 0 20px
+    @include sp
+      font-size: 16px
+  .descBox
+    color: #fff
+    text-align: center
+    line-height: 1.8
+    letter-spacing: 1.5px
   .contestImg
     width: 600px
     height: 600px
@@ -49,22 +58,35 @@
     display: flex
     flex-direction: row
     flex-wrap: wrap
-    display: none
     .contestJudgerInner
-      display: flex
-      width: 50%
+      margin-bottom: 100px
+      @include sp
+        margin-bottom: 80px
+      &:nth-child(2n+1)
+        margin-right: 120px
+        @include sp
+          margin-right: 0
       .judgeImg
-        width: 200px
-        height: 200px
-        margin-right: 50px
+        width: 180px
+        height: 180px
+        margin-bottom: 15px
+        @include sp
+          width: 120px
+          height: 120px
       .judgeProfile
         text-align: left
         .judgeProfileInner
           font-size: 16px
-          margin-bottom: 15px
+          margin-bottom: 20px
           color: #fff
+          line-height: 1.6
+          @include sp
+            font-size: 13px
+          .link
+              color: #fff
+              border-bottom: 1px solid #fff
           &:first-child
-            font-size: 18px
+            font-size: 16px
   .warningBox
     text-align: left
     margin-top: 50px
