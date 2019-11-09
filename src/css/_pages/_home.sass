@@ -1,0 +1,426 @@
+@import "../_mixin"
+@import "../_variables"
+
+.homeBox
+  margin: 0 auto
+  padding-top: 150px
+  max-width: 1024px
+  width: 100%
+  transition: .4s
+  opacity: 0
+  transform: translateY(50px)
+  @include pc
+    &:nth-child(4)
+      .flexBox
+        display: flex
+        flex-direction: row-reverse
+        .txtBox
+          width: 50%
+          margin-right: 50px
+          margin-left: 0
+          @include sp
+            margin-right: 0
+  @include sp
+    padding-top: 100px
+  &.fadeOn
+    opacity: 1
+    transform: translateY(0px)
+  &.slide
+    max-width: 100%
+  .mainSentence
+    text-align: center
+    color: #fff
+    margin-bottom: 50px
+    line-height: 1.8
+    letter-spacing: 1.5px
+  .mainSentence
+    + .subTitle
+      margin: 26px 0 25px
+      @include sp
+        margin: 2vw 0 4vw
+  .flexBox
+    display: flex
+    flex-direction: row
+    @include sp
+      display: block
+    .imageBox
+      left: 0
+      position: relative
+      top: 0
+      width: 50%
+      @include sp
+        width: 100%
+        min-height: 60vw
+        margin-bottom: 9vw
+      &.logo
+        .imageInner
+          &:nth-child(1)
+            left: 0
+            position: absolute
+            top: 0
+            width: 400px
+            @include sp
+              width: 80vw
+          &:nth-child(2)
+            border-radius: 10px
+            bottom: 10%
+            position: absolute
+            right: 15%
+            width: 180px
+            @include sp
+              right: 0
+              bottom: -3vw
+              width: 40vw
+            img
+              border-radius: 10px
+      &.event
+        .imageInner
+          &:nth-child(1)
+            left: 0
+            position: absolute
+            top: 0
+            width: 300px
+            z-index: 1
+            @include sp
+              width: 50vw
+          &:nth-child(2)
+            bottom: 0
+            position: absolute
+            right: 0
+            width: 400px
+            @include sp
+              width: 70vw
+    .txtBox
+      width: 50%
+      margin-left: 50px
+      @include sp
+        width: 100%
+        margin-left: 0
+      .min
+        font-size: 16px
+        font-weight: normal
+        color: #fff
+      .bigTxt
+        font-size: 26px
+        margin: 18px 0 30px
+        color: #fff
+        @include sp
+          margin: 10px 0 36px
+      .sentence
+        font-size: 16px
+        line-height: 2
+        color: #fff
+  .minBtn
+    border: 1px solid #fff
+    border-radius: 50px
+    display: flex
+    flex-direction: row
+    height: 60px
+    margin-top: 50px
+    width: 160px
+    position: relative
+    top: 0
+    left: 0
+    @include pc
+      &:hover
+        a
+          position: relative
+          color: #000
+          overflow: hidden
+          &::before
+            content: ""
+            position: absolute
+            top: 50%
+            left: 50%
+            border-radius: 50px
+            background-color: #fff
+            width: 100%
+            height: 100%
+            opacity: 1
+            transform: translate(-50%,-50%) scale(1.2)
+            z-index: -1
+        .arrow
+          .arrowInner
+            &:nth-child(1)
+              border-bottom: 1px solid #000
+            &:nth-child(2)
+              border-bottom: 1px solid #000
+    @include sp
+      margin-top: 5vw
+      left: 50%
+      transform: translateX(-50%)
+    a
+      align-items: center
+      border-radius: 50px
+      color: #fff
+      display: flex
+      height: 100%
+      justify-content: center
+      width: 100%
+      overflow: hidden
+      position: relative
+      z-index: 1
+      @include sp
+        color: #000
+        background-color: #fff
+      &::before
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%) scale(0)
+        width: 0%
+        height: 0%
+        border-radius: 50px
+        background-color: #fff
+        opacity: 0
+        transition: .3s
+      .arrow
+        display: block
+        height: 30px
+        left: 0
+        margin-left: 10px
+        position: relative
+        top: 0
+        width: 20px
+        .arrowInner
+          &:nth-child(1)
+            border-bottom: 1px solid #fff
+            display: block
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: rotate(45deg) translate(-50%, -50%)
+            width: 10px
+            @include sp
+              border-bottom: 1px solid #000
+          &:nth-child(2)
+            border-bottom: 1px solid #fff
+            display: block
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: rotate(-45deg) translate(-50%, -50%)
+            width: 10px
+            @include sp
+              border-bottom: 1px solid #000
+  .larg
+    font-size: 28px
+    text-align: center
+    color: #fff
+    margin-bottom: 25px
+  .subTitle
+    font-size: 16px
+    margin: 26px 0 40px
+    text-align: center
+    color: #fff
+    @include sp
+      margin: 2vw 0 13vw
+  .sentence
+    &.center
+      text-align: center
+      line-height: 2
+      letter-spacing: 2px
+      color: #fff
+      @include sp
+        padding: 0 3vw
+  .campList
+    margin-top: 60px
+    text-align: center
+    .campListInner
+      color: #fff
+      font-size: 18px
+      letter-spacing: 1.5px
+      margin-bottom: 14px
+  .middle
+    margin: 50px auto 0
+    @include sp
+      margin: 5vw 0 0
+  .tnBox
+    width: 100%
+    article
+      border: 1px solid #fff
+      border-right: none
+      border-left: none
+      display: flex
+      padding: 30px 40px
+      @include sp
+        display: block
+      &:not(:nth-child(1))
+        border-top: none
+      .date
+        margin-right: 50px
+        width: 18%
+        color: #fff
+        @include sp
+          width: 100%
+          margin-bottom: 4vw
+      .desc
+        color: #fff
+  .ourSnsBox
+    display: flex
+    margin-bottom: 15px
+    justify-content: space-between
+    width: 250px
+    margin: 0 auto
+    a
+      display: block
+      &.faceBook
+        &::before
+          background-image: $facebook
+          background-position: center
+          background-repeat: no-repeat
+          background-size: 100%
+          content: ""
+          display: block
+          height: 35px
+          width: 35px
+      &.twitter
+        &::before
+          background-image: $twitter
+          background-position: center
+          background-repeat: no-repeat
+          background-size: 100%
+          content: ""
+          display: block
+          height: 35px
+          width: 35px
+      &.instaGram
+        &::before
+          background-image: $insta
+          background-position: center
+          background-repeat: no-repeat
+          background-size: 100%
+          content: ""
+          display: block
+          width: 35px
+          height: 35px
+      &.partner
+        &::before
+          background-image: $partner
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 35px
+          content: ""
+          display: block
+          width: 35px
+          height: 35px
+  .sliderBox
+    margin: 40px 0 30px
+    position: relative
+    height: 280px
+    width: 100%
+    overflow: hidden
+    @include sp
+      height: 25vw
+    .sliderBoxInner
+      display: flex
+      left: 50%
+      opacity: 1
+      position: absolute
+      top: 0
+      transform: translate(-50%, 0%)
+      transition: all .3s
+      white-space: nowrap
+      width: 100%
+      @keyframes picSlider
+        0%
+          transform: translate(-40%, 0%)
+        100%
+          transform: translate(-60%, 0%)
+      .sliderImgBox
+        display: block
+        margin: 0 10px
+        height: 100%
+        width: 150px
+        &.slick-slide
+          width: 150px
+        img
+          max-height: 220px
+          margin: 0 auto
+  .widBtn
+    max-width: 660px
+    margin: 0 auto
+    text-align: center
+    width: 100%
+    border: 1px solid #fff
+    @include pc
+      &:hover
+        a
+          position: relative
+          color: #000
+          overflow: hidden
+          &::before
+            content: ""
+            position: absolute
+            top: 50%
+            left: 50%
+            border-radius: 50px
+            background-color: #fff
+            width: 100%
+            height: 100%
+            opacity: 1
+            transform: translate(-50%,-50%) scale(1.2)
+            z-index: -1
+        .arrow
+          .arrowInner
+            &:nth-child(1)
+              border-bottom: 1px solid #000
+            &:nth-child(2)
+              border-bottom: 1px solid #000
+    a
+      align-items: center
+      color: #fff
+      display: flex
+      height: 100%
+      justify-content: center
+      letter-spacing: 4px
+      padding: 30px
+      width: 100%
+      overflow: hidden
+      position: relative
+      z-index: 1
+      @include sp
+        color: #000
+        background-color: #fff
+      &::before
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%) scale(0)
+        border-radius: 50px
+        background-color: #fff
+        opacity: 0
+        transition: .3s
+        width: 0%
+        height: 0%
+      .arrow
+        display: block
+        height: 30px
+        left: 0
+        margin-left: 10px
+        position: relative
+        top: 0
+        width: 20px
+        .arrowInner
+          &:nth-child(1)
+            border-bottom: 1px solid #fff
+            display: block
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: rotate(45deg) translate(-50%, -50%)
+            width: 10px
+            @include sp
+              border-bottom: 1px solid #000
+          &:nth-child(2)
+            border-bottom: 1px solid #fff
+            display: block
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: rotate(-45deg) translate(-50%, -50%)
+            width: 10px
+            @include sp
+              border-bottom: 1px solid #000

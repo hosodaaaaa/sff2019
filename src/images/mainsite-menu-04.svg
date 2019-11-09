@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 766.57 108.1">
+	<defs>
+		<style>
+			.cls-1{isolation:isolate;}.cls-2{opacity:0.4;mix-blend-mode:screen;}.cls-10,.cls-3,.cls-5,.cls-6,.cls-8,.cls-9{font-size:80.92px;font-family:NotoSansDisplay-Black, Noto Sans Display;font-weight:800;}.cls-3,.cls-5,.cls-6{fill:#fff;}.cls-4{letter-spacing:0.16em;}.cls-5,.cls-9{letter-spacing:-0.08em;}.cls-10,.cls-6{letter-spacing:0.2em;}.cls-7{letter-spacing:0.16em;}.cls-10,.cls-8,.cls-9{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.98px;}
+		</style>
+	</defs>
+	<title>
+		mainsite-menu
+	</title>
+	<g class="cls-1">
+		<g id="レイヤー_1" data-name="レイヤー 1">
+			<g class="cls-2">
+				<text class="cls-3" transform="translate(7.27 69.35)">
+					<tspan class="cls-4">
+						TOPICS
+					</tspan>
+					<tspan x="362.62" y="0">
+					</tspan>
+				</text>
+				<text class="cls-5" transform="translate(389.63 69.35) scale(1 0.9)">
+					&amp;
+				</text>
+				<text class="cls-6" transform="translate(446.03 69.35)">
+					<tspan class="cls-7" x="35.93" y="0">
+						NEWS
+					</tspan>
+				</text>
+			</g>
+			<text class="cls-8" transform="translate(1.49 75.13)">
+				<tspan class="cls-4">
+					TOPICS
+				</tspan>
+				<tspan x="362.62" y="0">
+				</tspan>
+			</text>
+			<text class="cls-9" transform="translate(383.85 75.13) scale(1 0.9)">
+				&amp;
+			</text>
+			<text class="cls-10" transform="translate(440.25 75.13)">
+				<tspan class="cls-7" x="35.93" y="0">
+					NEWS
+				</tspan>
+			</text>
+			<text class="cls-8" transform="translate(1.49 75.13)">
+				<tspan class="cls-4">
+					TOPICS
+				</tspan>
+				<tspan x="362.62" y="0">
+				</tspan>
+			</text>
+			<text class="cls-9" transform="translate(383.85 75.13) scale(1 0.9)">
+				&amp;
+			</text>
+			<text class="cls-10" transform="translate(440.25 75.13)">
+				<tspan class="cls-7" x="35.93" y="0">
+					NEWS
+				</tspan>
+			</text>
+		</g>
+	</g>
+</svg>

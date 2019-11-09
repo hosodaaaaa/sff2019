@@ -1,0 +1,212 @@
+extends ../_layout
+block init
+  -
+    const meta = {
+      title: "Student Freepaper Forum Contest",
+      path: '../'
+    }
+    const page = {
+      id: "contest"
+    }
+block contents
+  section.mainChildBox
+    .contestTitle
+      img(src=`${path}/images/menu-icon-5.svg`, alt="")
+  section.contestBox
+    .subTitle コンテスト概要
+    .descBox
+      p.sentence SFF2019では、
+        br.sp
+        | 全国の学生団体が制作した学生フリーペーパーの日本一を決めるコンテストを開催します。
+        br
+        | 学生の紙面制作にかける情熱や紙面の魅力をより多くの方に知ってもらえるよう、
+        br.sp
+        | 今年はこれまでのアワード形式から、
+        br
+        | 5年ぶりにコンテスト形式を復活させ、
+        br.sp
+        | 決勝での公開プレゼンテーション審査を
+        br.sp
+        | 実施します。
+        br
+        | また、全応募団体が点数評価と
+        br.sp
+        | フィードバックを受けられるよう審査方式も
+        br.sp
+        | 一部改訂しました。
+        br
+        br
+        | 審査は全国から集まった
+        br.sp
+        | 学生フリーペーパーの中から、
+        br
+        | 3名の審査員による「1次審査」と全応募団体
+        br.sp
+        | の投票による「特別審査」を経て、
+        br.sp
+        | 勝ち残った6団体が、
+        br
+        | 決勝の舞台で公開プレゼンテーション審査に
+        br.sp
+        | 臨み、最終審査員の厳正な審査により
+        br.sp
+        | 「グランプリ」を決定します。
+  section#contestSch.contestBox
+    .subTitle スケジュール
+    .contestImg
+      img(src=`${path}/images/1030.png`, alt="スケジュール")
+  section#contestJude.contestBox
+    .subTitle 審査基準
+    .contestImg
+      img(src=`${path}/images/1030_2.png`, alt="審査基準")
+  section#contestJude02.contestBox
+    .subTitle １次審査員
+    .contestJudge
+      .contestJudgerInner
+        .judgeImg
+          img(src=`${path}images/matsu.jpg`, alt="matsu.jpg")
+        .judgeProfile
+          p.judgeProfileInner マツ
+          p.judgeProfileInner 暇つぶしのためだけのフリーペーパー『Himagine』
+            br
+            | 編集長。1992年生まれ。世田谷区出身。2013年、
+            br
+            | 大学3年で「Himagine」創刊後、2019年現在23号
+            br
+            | まで出版。編集員6名と号ごと変わるゲストライター
+            br
+            | 計30名と製作している。フリーペーパー発行以外にも、
+            br
+            | 2018年にグルメグランプリを主催するなどマルチに
+            br
+            | 活動している。
+            br
+            | 普段はただのサラリーマン
+      .contestJudgerInner
+        .judgeImg
+          img(src=`${path}images/JunHirayama_re.jpg`, alt="JunHirayama_re.jpg")
+        .judgeProfile
+          p.judgeProfileInner Jun Hirayama
+          p.judgeProfileInner NEUT Magazine創刊編集長。1992年相模原市生まれ。
+            br
+            | 成蹊大学卒。
+            br
+            | 卒業後、ウェブメディア『Be inspired!』編集長を経て、
+            br
+            | 現在は2018年10月に『Be inspired!』を『NEUT
+            br
+            | Magazine（ニュートマガジン）』にリニューアル創刊
+            br
+            | させ、編集長を務める。“Make Extreme Neutral” を
+            br
+            | 掲げ、世間でエクストリームだと思われるようなトピック·
+            br
+            | 人に光を当て、より多くの人に「先入観に縛られないニュ
+            br
+            | ートラルな視点」を届けられるよう活動中。
+      .contestJudgerInner
+        .judgeImg
+          img(src=`${path}images/1001.jpg`, alt="matsu.jpg")
+        .judgeProfile
+          p.judgeProfileInner 文字の観察
+            |
+            a(href="https://twitter.com/fontdesuka" target="_blank").link （@fontdesuka）
+          p.judgeProfileInner 中の人はグラフィックデザイナーの黒岩美桜です。
+            br
+            | 広告会社を経てフリーのグラフィックデザイナー。
+            br
+            | クリエイティブカンパニーchicabiに所属。和文デザイン
+            br
+            | を中心にロゴ、パッケージ、冊子デザイン等を手がけてい
+            br
+            | ます。
+  section#contestJude03.contestBox
+    .subTitle 最終審査員
+    .contestJudge
+      .contestJudgerInner
+        .judgeImg
+          img(src=`${path}images/haru_re.jpg`, alt="haru_re.jpg")
+        .judgeProfile
+          p.judgeProfileInner haru.
+          p.judgeProfileInner 東京藝術大学在学中の２０１５年、同世代のクリエーター
+            br
+            | とインディペンデントマガジン「HIGH(er)magazine」
+            br
+            | を編集長として創刊。多様なブランドとのタイアップ
+            br
+            | コンテンツ制作を行ったのち、今年６月に株式会社ＨＵＧ
+            br
+            | を設立。取締役としてコンテンツプロデュースと
+            br
+            | アーティストマネジメントの事業を展開し、新しい価値を
+            br
+            | 届けるというミッションに取り組む。
+      .contestJudgerInner
+        .judgeImg
+          img(src=`${path}images/chihara_re.jpg`, alt="chihara_re.jpg")
+        .judgeProfile
+          p.judgeProfileInner 千原 徹也
+          p.judgeProfileInner クリエイティブディレクター
+            br
+            | ／株式会社れもんらいふ代表
+            br
+            br
+            | 広告、ブランディング、CDジャケット、装丁、
+            br
+            | 雑誌エディトリアル、映像など、デザインするジャンルは
+            br
+            | 様々。主なアートディレクションに、H&M GOLDEN
+            br
+            | PASSキャンペーン、桑田佳祐 アルバム「がらくた」、関
+            br
+            | ジャニ∞アルバム「ジャム」ウンナナクール、小泉今日子
+            br
+            | 35周年ベストアルバム、オニツカタイガー、NHKガッテ
+            br
+            | ン！、吉澤嘉代子、adidas Originals店舗ブランディング
+            br
+            | などが知られている。 さらには、勝手にサザンDAYの主
+            br
+            | 催、ラジオパーソナリティー、れもんらいふデザイン塾の
+            br
+            | 主催、東京ロゴ「キストーキョー」による東京応援プロジ
+            br
+            | ェクトなど、さまざまなジャンルへ、活動の幅を広げてい
+            br
+            | る。
+            br
+            |
+            a(href="https://lemonlife.jp/", target="_blank").link https://lemonlife.jp/
+      .contestJudgerInner
+        .judgeImg
+          img(src=`${path}images/myouen_re.jpg`, alt="myouen_re.jpg")
+        .judgeProfile
+          p.judgeProfileInner 明円卓（みょうえん・すぐる）
+          p.judgeProfileInner 電通 CMプランナー / コピーライター　
+            br
+            | 最近の仕事に「意識高すぎ！高杉くん」「三太郎」
+            br
+            | シリーズ（KDDI）や「バズ宣」（プレミアムバンダイ）、
+            br
+            | AI、RADWIMPSのプロモーションなど。
+            br
+            | デジタルハリウッド大学客員教授。
+            br
+            | Twitter
+            a(href="https://twitter.com/sugurumyoen" target="_blank").link @sugurumyoen
+  section#contestInf.contestBox
+    .title INFORMATION
+    .subTitle 参加団体の皆さまへ
+    .warningBox
+      p.sentence ・当日媒体は100~300部までご持参いただけます。（ただし、過去に出展され冊数が足りないと感じた場合は、冊数を増やしていただいても構いません。）
+      p.sentence ・フリーペーパーは、最新号でもバックナンバーでもお好きな号をご持参いただけます。（何種類でも可）
+      p.sentence ・事前にこちらからご連絡した時間を指定して、媒体を発送してください。また、ダンボールの外側に媒体名・団体名の記載をお願いいたします。
+      p.sentence ・媒体が到着しないなどの問題が発生した場合に備え、追跡番号を必ず控えておくようお願いいたします。
+      p.sentence ・基本、イベント終了後に余った媒体はこちらで処分いたします。郵送希望の場合、着払いにて発送になります。（※無人ブース出展で郵送希望の場合は、あらかじめご連絡ください。）
+  section#contesGui.contestBox
+    .subTitle 当日イベントについてのご案内
+    .warningBox
+      p.sentence ・ブース出展料は有人・無人問わず1000円となっております。有人ブースの方は、当日の出展受付の際にお支払いをお願いいたします。
+      p.sentence ・出展者の皆さまは10:20からご入場いただけます。また当日の出展受付は、「神保町テラススクエア」1階にて、10:20~10:50の時間内に行います。必ず時間内に受付をお済ませください。
+      p.sentence ・一般来場は11:00からとなっております。
+      p.sentence ・今年も昨年同様、クロークのご用意はございません。貴重品は必ず身につけていただきますようお願いいたします。

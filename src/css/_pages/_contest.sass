@@ -1,0 +1,108 @@
+@import "../_mixin"
+@import "../_variables"
+
+.mainChildBox
+  .contestTitle
+    width: 540px
+    height: 120px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    @include sp
+      width: 280px
+.contestBox
+  margin: 0 auto
+  padding-top: 150px
+  max-width: 1024px
+  width: 100%
+  text-align: center
+  transition: .4s
+  opacity: 0
+  transform: translateY(50px)
+  @include sp
+    padding-top: 100px
+  &.fadeOn
+    opacity: 1
+    transform: translateY(0px)
+  &:first-of-type
+    padding-top: 120px
+  .title
+    font-size: 34px
+    font-weight: bold
+    color: #fff
+    @include sp
+      font-size: 22px
+  .subTitle
+    font-size: 22px
+    font-weight: normal
+    color: #fff
+    margin: 13px 0 20px
+    @include sp
+      font-size: 16px
+  .descBox
+    color: #fff
+    text-align: center
+    line-height: 1.8
+    letter-spacing: 1.5px
+  .contestImg
+    width: 600px
+    height: 600px
+    margin: 50px auto 40px
+    @include sp
+      width: 100%
+      height: auto
+  .contestJudge
+    max-width: 900px
+    margin: 50px auto 0
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .contestJudgerInner
+      margin-bottom: 100px
+      @include sp
+        margin-bottom: 80px
+      &:nth-child(2n+1)
+        margin-right: 120px
+        @include sp
+          margin-right: 0
+      .judgeImg
+        width: 180px
+        height: 180px
+        margin-bottom: 15px
+        @include sp
+          width: 120px
+          height: 120px
+      .judgeProfile
+        text-align: left
+        .judgeProfileInner
+          font-size: 16px
+          margin-bottom: 20px
+          color: #fff
+          line-height: 1.6
+          @include sp
+            font-size: 13px
+          .link
+              color: #fff
+              border-bottom: 1px solid #fff
+          &:first-child
+            font-size: 16px
+  .warningBox
+    text-align: left
+    margin-top: 50px
+    .sentence
+      margin-bottom: 35px
+      line-height: 1.5
+      letter-spacing: 1.5px
+      color: #fff
+      @include sp
+        font-size: 14px
+  .warningSubBox
+    text-align: left
+    .sentence
+      margin-bottom: 10px
+      line-height: 1.5
+      letter-spacing: 1.5px
+      color: #fff
+      @include sp
+        font-size: 14px

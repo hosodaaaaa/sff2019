@@ -1,0 +1,241 @@
+extends _layout
+block init
+  -
+    const meta = {
+      title: "Student Freepaper Forum"
+    }
+    const page = {
+      id: "home"
+    }
+block contents
+  section.mainBox
+  section.homeBox
+    .mainSentence Student Freepaper Forum
+      br.sp
+      |（通称SFF）とは？
+      br
+      | 「フリーペーパー 」というメディアを軸に
+      br
+      | 学生と社会を繋ぐ交流地点を作ることを
+      br.sp
+      | ミッションとしている学生団体です。
+    .mainSentence 国内最大級の学生フリーペーパーの祭典 SFF2019
+      br
+      | 2019.12.8 (sun)  11:00〜17:00 　＠神保町テラススクエア
+      br
+      | 入場無料！！
+    h3.subTitle 私たちの活動を見る
+    ul.ourSnsBox
+      li.ourSnsBoxInner
+        a(href="https://www.facebook.com/sff.web/" target="_blank").faceBook
+      li.ourSnsBoxInner
+        a(href="https://twitter.com/SFF__2019" target="_blank").twitter
+      li.ourSnsBoxInner
+        a(href="https://www.instagram.com/sff2019.event/" target="_blank").instaGram
+      li.ourSnsBoxInner
+        a(href="https://partner-web.jp/writer/?id=103" target="_blank").partner
+  section.homeBox
+    .flexBox
+      .imageBox.event.pc
+        .imageInner
+          img(src=`${path}images/event-01.jpg`, alt="event-01")
+        .imageInner
+          img(src=`${path}images/event-02.jpg`, alt="event-02")
+      .txtBox
+        h3.title.min EVENT
+        p.bigTxt 全国の学生フリーペーパーが一同に集結
+        .imageBox.event.sp
+          .imageInner
+            img(src=`${path}images/event-01.jpg`, alt="event-01")
+          .imageInner
+            img(src=`${path}images/event-02.jpg`, alt="event-02")
+        p.sentence 年に一度のフリーペーパーの祭典を今年も開催。
+          br.pc
+          | 全国の大学生が作成した約60種類の学生フリーペーパーが一同
+          br.pc
+          | に集まる国内最大級フリーペーパーの祭典、Student
+          br.pc
+          | Freeparer Forum 2019（以下、SFF2019）を12月8日(日) に
+          br.pc
+          | 東京の本の街、神保町にて開催します。
+        .minBtn
+          a(href=`${path}/event/`) MORE
+            span.arrow
+              span.arrowInner
+              span.arrowInner
+  section.homeBox
+    .flexBox
+      .imageBox.logo.pc
+        .imageInner
+          img(src=`${path}images/sff2019_main_re_pc.png`, alt="sff2019_main_re_pc")
+        .imageInner
+          img(src=`${path}images/limited-logo.jpg`, alt="limited-logo")
+      .txtBox
+        h3.title.min OUR CONCEPT
+        p.bigTxt 今年のテーマは「Neo SFF」
+        .imageBox.logo.sp
+          .imageInner
+            img(src=`${path}images/sff2019_main_re_pc.png`, alt="sff2019_main_re_pc")
+          .imageInner
+            img(src=`${path}images/limited-logo.jpg`, alt="limited-logo")
+        p.sentence SFFの今年のテーマは「NEO SFF」
+          br.pc
+          | 「NEO」は、ギリシャ語では「新しい」・英語では「復活」と
+          br.pc
+          | いう意味があります。
+          br.pc
+          | SFFが培ってきた14年の歴史をさらに受け継いでいくための”新
+          br.pc
+          | しさ”、そしてさらなる新しさを生み出すための原点回帰を目指
+          br.pc
+          | すという意味が込められています。
+        .minBtn
+          a(href=`${path}/about/`) MORE
+            span.arrow
+              span.arrowInner
+              span.arrowInner
+  section#tn.homeBox
+    h3.title.larg TOPICS & NEWS
+    p.subTitle SFFに関する最新の情報を更新していきます。
+      .tnBox
+        article
+          .date 2019.12.8 (日)
+          .desc Student Freepaper Forum2019
+        article.tnBox
+          .date 2019.11.16 (土)、 17(日)
+          .desc 特別審査　in　東京、大阪
+        article
+          .date 2019. 10.31 (木)
+          .desc ブース出展受付　締切
+  section.homeBox.slide
+    h3.title.larg CONTEST
+    p.subTitle 2019年、参加団体一覧
+    .sliderBox
+      .sliderBoxInner
+        .sliderImgBox
+          img(src=`${path}images/1_Magadipita.png`, alt="1_Magadipita").lazyload
+        .sliderImgBox
+          img(src=`${path}images/2_ariozo.jpg`, alt="2_ariozo").lazyload
+        .sliderImgBox
+          img(src=`${path}images/3_bootleg.jpg`, alt="3_bootleg").lazyload
+        .sliderImgBox
+          img(src=`${path}images/4_outmeiji.jpg`, alt="4_outmeiji").lazyload
+        .sliderImgBox
+          img(src=`${path}images/5_tot.png`, alt="5_tot").lazyload
+        .sliderImgBox
+          img(src=`${path}images/7_wasekichi.jpg`, alt="7_wasekichi").lazyload
+        .sliderImgBox
+          img(src=`${path}images/8_backpacker.jpg`, alt="8_backpacker").lazyload
+        .sliderImgBox
+          img(src=`${path}images/9_fastner.jpg`, alt="9_fastner").lazyload
+        .sliderImgBox
+          img(src=`${path}images/10_ReGo.jpg`, alt="10_ReGo").lazyload
+        .sliderImgBox
+          img(src=`${path}images/11_watcha.jpg`, alt="11_watcha").lazyload
+        .sliderImgBox
+          img(src=`${path}images/12_each.jpg`, alt="12_each").lazyload
+        .sliderImgBox
+          img(src=`${path}images/13_lovehotelzukan.jpg`, alt="13_lovehotelzukan").lazyload
+        .sliderImgBox
+          img(src=`${path}images/14_whim.jpg`, alt="14_whim").lazyload
+        .sliderImgBox
+          img(src=`${path}images/15_SAN.jpg`, alt="15_SAN").lazyload
+        .sliderImgBox
+          img(src=`${path}images/17_komastry.jpg`, alt="17_komastry").lazyload
+        .sliderImgBox
+          img(src=`${path}images/18_Twinkle.jpg`, alt="18_Twinkle").lazyload
+        .sliderImgBox
+          img(src=`${path}images/20_brauz.jpg`, alt="20_brauz").lazyload
+        .sliderImgBox
+          img(src=`${path}images/21_wasedakoukoku.jpg`, alt="21_wasedakoukoku").lazyload
+        .sliderImgBox
+          img(src=`${path}images/22_kotonoha.jpg`, alt="22_kotonoha").lazyload
+        .sliderImgBox
+          img(src=`${path}images/23_mejimag.jpg`, alt="23_mejimag").lazyload
+        .sliderImgBox
+          img(src=`${path}images/24_mix.jpg`, alt="24_mix").lazyload
+        .sliderImgBox
+          img(src=`${path}images/25_mA.jpg`, alt="25_mA").lazyload
+        .sliderImgBox
+          img(src=`${path}images/26_tabiizyo.jpg`, alt="26_tabiizyo").lazyload
+        .sliderImgBox
+          img(src=`${path}images/27_kuuls.jpg`, alt="27_kuuls").lazyload
+        .sliderImgBox
+          img(src=`${path}images/28_ikor.jpg`, alt="28_ikor").lazyload
+        .sliderImgBox
+          img(src=`${path}images/29_chotbetter.jpg`, alt="29_chotbetter").lazyload
+        .sliderImgBox
+          img(src=`${path}images/30_blooming.jpg`, alt="30_blooming").lazyload
+        .sliderImgBox
+          img(src=`${path}images/31_gift.jpg`, alt="31_gift").lazyload
+        .sliderImgBox
+          img(src=`${path}images/32_croquis.jpg`, alt="32_croquis").lazyload
+        .sliderImgBox
+          img(src=`${path}images/35_KooBee.jpg`, alt="35_KooBee").lazyload
+        .sliderImgBox
+          img(src=`${path}images/36_GMODE.jpg`, alt="36_GMODE").lazyload
+        .sliderImgBox
+          img(src=`${path}images/38_homegrow.jpg`, alt="38_homegrow").lazyload
+        .sliderImgBox
+          img(src=`${path}images/39_ReALL.jpg`, alt="39_ReALL").lazyload
+        .sliderImgBox
+          img(src=`${path}images/40_UUPRAS.jpg`, alt="40_UUPRAS").lazyload
+        .sliderImgBox
+          img(src=`${path}images/41_iki.jpg`, alt="41_iki").lazyload
+        .sliderImgBox
+          img(src=`${path}images/42_Apollo.jpg`, alt="42_Apollo").lazyload
+        .sliderImgBox
+          img(src=`${path}images/43_raw.jpg`, alt="43_raw").lazyload
+        .sliderImgBox
+          img(src=`${path}images/44_VIVID.jpg`, alt="44_VIVID").lazyload
+        .sliderImgBox
+          img(src=`${path}images/45_LinKU.jpg`, alt="45_LinKU").lazyload
+        .sliderImgBox
+          img(src=`${path}images/46_AGESTOCK.jpg`, alt="46_AGESTOCK").lazyload
+        .sliderImgBox
+          img(src=`${path}images/47_seel.jpg`, alt="47_seel").lazyload
+        .sliderImgBox
+          img(src=`${path}images/48_IU.jpg`, alt="48_IU").lazyload
+        .sliderImgBox
+          img(src=`${path}images/49_in.jpg`, alt="47_seel").lazyload
+        .sliderImgBox
+          img(src=`${path}images/51_wasedalinks.jpg`, alt="51_wasedalinks").lazyload
+        .sliderImgBox
+          img(src=`${path}images/52_TanTan.jpg`, alt="52_TanTan").lazyload
+        .sliderImgBox
+          img(src=`${path}images/54_R'smagazine.jpg`, alt="54_R'smagazine").lazyload
+        .sliderImgBox
+          img(src=`${path}images/57_SPC.jpg`, alt="57_SPC").lazyload
+        .sliderImgBox
+          img(src=`${path}images/58_Ricerca.jpg`, alt="58_Ricerca").lazyload
+        .sliderImgBox
+          img(src=`${path}images/59_Revo.jpg`, alt="59_Revo").lazyload
+    .sentence.center SFF2019では
+      br.sp
+      | 昨年までのアワード形式を一転し、
+      br
+      | コンテスト形式を復活させることにしました。
+      br.pc
+      | 今回のコンテストは、
+      br.sp
+      | プロの目線から評価とフィードバックを
+      br
+      | 受けることができるとともに、
+      br.sp
+      | 作り手側の想いや熱量を
+      br
+      | プレゼンを通じてアピールできる
+      br.sp
+      | 場となっております。
+    .minBtn.middle
+      a(href=`${path}/contest/`) MORE
+        span.arrow
+          span.arrowInner
+          span.arrowInner
+  section#contestJude02.homeBox
+    h3.title.larg SPONSOR
+    ul.campList
+      li.campListInner アドビ システムズ 株式会社
+      li.campListInner 株式会社クリエイターズマッチ
+      li.campListInner 神話の国 縁結び観光協会
+      li.campListInner 株式会社竹尾

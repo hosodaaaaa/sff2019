@@ -1,0 +1,41 @@
+doctype html
+block init
+- const title = meta.title || "Student Freepaper Forum"
+- const desc = meta.desc || "全国最大級の学生フリーペーパーの祭典. SFF2019の情報を解禁しました！"
+- const path = meta.path || "./"
+- const url = "https://sff-web.com"
+head
+  meta(charset="UTF-8")
+  title= title
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  meta(name="description", content="desc")
+  meta(property="og:title" content=title)
+  meta(property="og:type" content="website")
+  meta(property="og:url" content=url)
+  meta(property="og:image" content=`${path}/images/sff_favicon_01.png`)
+  meta(property="og:site_name" content=title)
+  meta(property="og:description" content=desc)
+  meta(name="twitter:card" content="summary")
+  meta(property="fb:app_id" content="678043905954878")
+  meta(property="twitter:title" content=title)
+  meta(name="twitter:site" content="@SFF__2019")
+  meta(property="twitter:description" content=desc)
+  meta(name="apple-mobile-web-app-capable" content="yes")
+  link(rel="favicon icon" href=`${path}images/sff_favicon_01.png`)
+  link(rel="stylesheet", href=`${path}css/sanitize.css`)
+  link(rel="stylesheet", href=`${path}css/main.css`)
+  link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+  link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+body(class=page.id || null)
+  wrapper
+    include _partials/_header.pug
+    include _partials/_hamburger.pug
+    main
+      block contents
+    include _partials/_footer.pug
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+  script(src=`${path}js/main.js`)
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6ssf3FoD52IjTsNSY05mbmHIA8mlbVJc&callback=initMap" async defer)
+  script(src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js")

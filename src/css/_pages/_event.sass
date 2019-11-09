@@ -1,0 +1,82 @@
+@import "../_mixin"
+@import "../_variables"
+
+.mainChildBox
+  .eventTitle
+    width: 420px
+    height: 120px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    @include sp
+      width: 280px
+.eventBox
+  margin: 0 auto
+  padding-top: 150px
+  max-width: 1024px
+  width: 100%
+  text-align: center
+  transition: .4s
+  opacity: 0
+  transform: translateY(50px)
+  @include sp
+    padding-top: 100px
+  &.fadeOn
+    opacity: 1
+    transform: translateY(0px)
+  &:first-child
+    padding-top: 120px
+  .title
+    font-size: 34px
+    font-weight: bold
+    color: #fff
+    @include sp
+      font-size: 22px
+  .subTitle
+    font-size: 22px
+    font-weight: normal
+    color: #fff
+    margin: 13px 0 60px
+    @include sp
+      font-size: 16px
+  .mainSentence
+    text-align: center
+    color: #fff
+    line-height: 1.8
+    letter-spacing: 1.5px
+  .eventImgBox
+    margin-top: 40px
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    @include sp
+      grid-template-columns: repeat(2,1fr)
+    .eventImgInner
+      margin: 0 12px 40px
+      .imgBox
+        margin-bottom: 20px
+        img
+          height: 280px
+          @include sp
+            max-height: 200px
+      .imgTitle
+        font-size: 16px
+        color: #fff
+  .eventInfo
+    letter-spacing: 1.5px
+    margin: 50px auto 20px
+    max-width: 680px
+    text-align: left
+    color: #fff
+    .eventInfoTitle
+      float: left
+      height: 26px
+      line-height: 1.5
+      @include sp
+        &.tall
+          height: 76px
+    .eventInfoDiscription
+      padding-bottom: 8px
+      line-height: 1.6
+  #map
+    height: 350px

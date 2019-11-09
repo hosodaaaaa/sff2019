@@ -1,0 +1,96 @@
+@import "../_mixin"
+@import "../_variables"
+
+
+// 全体共通
+html,body,div,ul,li,h1,h2,h3,h4,p,span
+  margin: 0px
+  padding: 0px
+
+img
+  max-width: 100%
+  height: auto
+
+li
+  list-style: none
+
+a
+  text-decoration: none
+
+.pc
+  display: block
+  @include sp
+    display: none
+
+.sp
+  display: none
+  @include sp
+    display: block
+
+#map
+  max-width: 680px
+  width: 100%
+  margin: 0 auto
+
+section
+  @include sp
+    padding: 0 5vw
+  &.slide
+    @include sp
+      padding: 100px 0 0
+.mg
+  margin-right: 20px
+  @include sp
+    margin-right: 0
+
+body.fix
+  overflow: hidden
+
+main
+  position: relative
+  width: 100%
+  height: 100%
+  overflow: hidden
+  background-color: $bgColor
+  padding-bottom: 150px
+  @include sp
+    padding-bottom: 100px
+  &::after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 50%
+    width: 100px
+    transform: translateX(-50%)
+    border-bottom: 1px solid #fff
+
+.mainBox
+  height: 100vh
+  width: 100%
+  background-image: $homeMain
+  background-size: cover
+  background-position: center
+  background-repeat: norepeat
+  position: relative
+  @include sp
+    min-height: 637px
+    background-image: $homeSpMain
+
+
+.mainChildBox
+  height: 100vh
+  width: 100%
+  background-image: $childMain
+  background-size: cover
+  background-position: center
+  background-repeat: norepeat
+  position: relative
+  @include sp
+    min-height: 637px
+    background-image: $childSpMain
+
+.limited
+  margin: 140px 0 140px
+  color: #fff
+  @include sp
+    margin: 18vw 0
