@@ -11,6 +11,8 @@
     transform: translate(-50%,-50%)
     @include sp
       width: 280px
+#eventTak
+  max-width: 640px
 .eventBox
   margin: 0 auto
   padding-top: 150px
@@ -61,6 +63,37 @@
             max-height: 200px
       .imgTitle
         font-size: 16px
+        color: #fff
+  .titleBox
+    margin: 60px 0 30px
+    text-align: left
+    color: #fff
+    h3
+      font-size: 16px
+    .subTitle
+      margin: 15px 0 20px
+      font-size: 26px
+      @include sp
+        font-size: 20px
+  .flexBox
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .imgBox
+      width: 310px
+  .sentenceBox
+    color: #fff
+    text-align: left
+    line-height: 1.6
+    margin-top: 30px
+    &:nth-child(4)
+      margin-bottom: 60px
+    h4
+      font-size: 18px
+    .linkBox
+      margin-bottom: 10px
+      a
+        border-bottom: 1px solid #fff
         color: #fff
   .eventInfo
     letter-spacing: 1.5px
