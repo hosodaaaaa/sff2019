@@ -13,6 +13,45 @@
       width: 280px
 #eventTak
   max-width: 640px
+#eventWor
+  .flexBox
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 100%
+    .wsBox
+      margin-bottom: 60px
+      .imgBox
+        width: 460px
+        @include sp
+          width: 100%
+      .wsTitles
+        color: #fff
+        text-align: left
+        .firstTxt
+          font-size: 12px
+          margin-top: 25px
+        .wsName
+          font-size: 18px
+          margin: 15px 0 5px
+          line-height: 1.6
+          @include sp
+            font-size: 20px
+        .wsPresented
+          font-size: 16px
+      .wsDesc
+        margin-top: 20px
+        text-align: left
+        color: #fff
+        font-size: 14px
+        line-height: 1.6
+        font-weight: 300
+        @include sp
+          line-height: 1.8
+        a
+          color: #fff
+          border-bottom: 1px solid #fff
 .eventBox
   margin: 0 auto
   padding-top: 150px
@@ -105,6 +144,8 @@
       float: left
       height: 26px
       line-height: 1.5
+      &:nth-child(5)
+        height: 54px
       @include sp
         &.tall
           height: 76px
