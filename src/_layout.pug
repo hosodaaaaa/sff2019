@@ -9,7 +9,7 @@ head
   title= title
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
   meta(http-equiv="X-UA-Compatible", content="ie=edge")
-  meta(name="description", content="desc")
+  meta(name="description" itemprop="description" content="desc")
   meta(property="og:title" content=title)
   meta(property="og:type" content="website")
   meta(property="og:url" content=url)
@@ -27,6 +27,7 @@ head
   link(rel="stylesheet", href=`${path}css/main.css`)
   link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
   link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+  link(href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet")
 body(class=page.id || null)
   wrapper
     include _partials/_header.pug
