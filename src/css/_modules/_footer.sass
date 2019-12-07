@@ -126,9 +126,11 @@
         border: 1px solid #fff
         text-align: center
         overflow: hidden
-        width: 76%
+        width: 100%
         margin: 0 auto
         border-radius: 5px
+        @include sp
+          width: 76%
         @include pc
           &:hover
             a
