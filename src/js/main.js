@@ -64,7 +64,7 @@ $(".sliderBoxInner").slick({
     {
       breakpoint: 750,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 2
       }
     }
   ]
