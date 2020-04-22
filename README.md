@@ -4,12 +4,12 @@ develop for sff2019
 
 ## git commit message
 
-:tada: first commit<br>
-:bug: Bug support<br>
-:sparkles: New feature<br>
-:books: read me<br>
-:lipstick: cosmetic<br>
-:construction: WIP<br>
+:tada: first commit  
+:bug: Bug support  
+:sparkles: New feature  
+:books: read me  
+:lipstick: cosmetic  
+:construction: WIP  
 :zap: General update
 
 ## 環境
